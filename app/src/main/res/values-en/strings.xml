@@ -3,7 +3,9 @@
     <string name="language">English</string>
     <string name="role_caregiver">Are you caregiver?</string>
     <string name="role_patient">Are you patient?</string>
-    <string name="what_is_stroke">What is Stroke ?</string>
+    <string name="what_is_stroke">What is Stroke?</string>
+    <string name="fill_query">Please write your query here</string>
+    <string name="suggestions">Please write your valuable suggestions here</string>
     <string name="problems_after_stroke">Problems After Stroke</string>
     <string name="taking_care_home">Taking care of my Stroke patient at home</string>
     <string name="feedback">Feedback</string>
@@ -50,7 +52,7 @@
     <string name="video_feedback_message">Most important: Kindly post here feed back video of the procedure you are performing on your patient e.g. limb exercises so that we can guide you if you are doing any wrong in this procedure</string>
     <string name="schedule_instructions">Kindly visit room no. 3112 at 3rd floor Neurology OPD (New OPD Block) Patient follow up will be fixed at 1/3 months Mobile SMS/ Whats-app messages/E-mails will be sent to the patients as well as caregivers regarding follow ups</string>
     <string name="pick_time">Pick Time</string>
-    <string name="bad_mouth_odor_duration_in_days">Duration of bad odor patient\'s mouth in days</string>
+    <string name="bad_mouth_odor_duration_in_days">Duration of bad odour in the patient\'s mouth (in days)</string>
     <string name="shoulder_pain_duration_in_days">Duration of shoulder pain in days</string>
     <string name="limbs_weekness_duration_in_days">Duration of weekness in limbs</string>
     <string name="limb_weekness_side">Side of weakness</string>
