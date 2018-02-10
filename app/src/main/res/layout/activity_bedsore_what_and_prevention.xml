@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mapps.stroleapp.careathome.BedsoreWhatAndPreventionHomeActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/what_and_prevention"
+        android:text="@string/what_and_prevention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/back_care"
+        android:text="@string/back_care"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/degree_oblique_position"
+        android:text="@string/degree_oblique_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/bedsore_dressing"
+        android:text="@string/bedsore_dressing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/sterile_articles_bedsore_dressing"
+        android:text="@string/sterile_articles_bedsore_dressing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/back"
+        android:text="@string/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

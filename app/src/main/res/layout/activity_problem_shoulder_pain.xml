@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
+
+    <TextView
+        android:text="@string/shoulder_pain_duration_in_days"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/shoulder_pain_duration_in_days"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:text="@string/submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/back"
+        android:text="@string/back"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

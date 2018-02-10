@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stroke App</string>
+    <string name="select_language">Select Language\n भाषा का चयन करें</string>
+    <string name="english">English</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="pgi">Stroke Services\n Department of Neurology\n PGIMER, Chandigarh</string>
+</resources>

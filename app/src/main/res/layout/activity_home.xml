@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.mapps.stroleapp.HomeActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/button_orange"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/what_is_stroke"
+            android:text="@string/what_is_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button_orange"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/problems_after_stroke"
+            android:text="@string/problems_after_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/button_orange"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/taking_care_home"
+            android:text="@string/taking_care_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/button_orange"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/feedback"
+            android:text="@string/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/button_orange"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/follow_up_schedule"
+            android:text="@string/follow_up_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:background="@drawable/button_orange"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/sign_out"
+            android:text="@string/btn_sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

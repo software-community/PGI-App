@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapps.stroleapp.careathome.DosAndDontsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/hw_soap_and_water"
+            android:text="@string/hw_soap_and_water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/hw_hand_rub"
+            android:text="@string/hw_hand_rub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/medications_advice"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/medications_advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/back"
+        android:text="@string/back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

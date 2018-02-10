@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapps.stroleapp.careathome.LimbExercisesActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/passive_range_exercises"
+            android:text="@string/passive_range_exercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/button_blue"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/active_range_exercises"
+            android:text="@string/active_range_exercises"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button_blue"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/button_margins"
+        android:id="@+id/back"
+        android:text="@string/back"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
