@@ -11,9 +11,9 @@ import com.mapps.stroleapp.R;
 
 import java.util.Locale;
 
-public class WhatIsStrokeVideoActivity extends AppCompatActivity implements EasyVideoCallback {
+public class WhatIsStrokeVideoActivity extends AppCompatActivity{
 
-    private EasyVideoPlayer player;
+    //private EasyVideoPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class WhatIsStrokeVideoActivity extends AppCompatActivity implements Easy
 
         setContentView(R.layout.activity_what_is_stroke);
 
-        // Grabs a reference to the player view
+       /* // Grabs a reference to the player view
         player = (EasyVideoPlayer) findViewById(R.id.player);
 
         // Sets the callback to this Activity, since it inherits EasyVideoCallback
@@ -35,14 +35,14 @@ public class WhatIsStrokeVideoActivity extends AppCompatActivity implements Easy
             player.setSource(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.demo));
         } else if (Locale.getDefault().getLanguage().equals("hi")) {
             player.setSource(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.demo));
-        }
+        }*/
 
         // From here, the player view will show a progress indicator until the player is prepared.
         // Once it's prepared, the progress indicator goes away and the controls become enabled for the user to begin playback.
 
     }
 
-    @Override
+    /*@Override
     public void onPause() {
         super.onPause();
         // Make sure the player stops playing if the user presses the home button.
@@ -95,5 +95,5 @@ public class WhatIsStrokeVideoActivity extends AppCompatActivity implements Easy
     @Override
     public void onPaused(EasyVideoPlayer player) {
         // TODO handle if needed
-    }
+    }*/
 }

@@ -4,6 +4,8 @@
     <string name="role_caregiver">क्या आप एक देखभाल कर्ता हैं ?</string>
     <string name="role_patient">क्या आप एक मरीज हैं ?</string>
     <string name="what_is_stroke">स्ट्रोक (अधरंग) क्या है ?</string>
+    <string name="fill_query">अपने प्रश्न लिखें</string>
+    <string name="suggestions">कृपया अपने बहुमूल्य सुझाव यहाँ लिखना</string>
     <string name="problems_after_stroke">स्ट्रोक के बाद मरीज को होने वाली परेशानियाँ</string>
     <string name="taking_care_home">अपने मरीज की घर पर देखभाल करना</string>
     <string name="feedback">प्रतिक्रिया (फीड-बेक)**</string>
@@ -29,6 +31,7 @@
     <string name="what_and_prevention">बेडसोर क्या है और बेडसोर को होने से कैसे रोकें ?</string>
     <string name="how_to_feed">मरीज को नाक की नली से भोजन कैसे दें ?</string>
     <string name="mouth_care">मरीज के मुँह की देखभाल कैसे करें ?</string>
+    <string name="medicine_name">दवा का नाम लिखें</string>
     <string name="urinary_catheter_care">मरीज के पेशाब की नली की देखभाल कैसे करें ?</string>
     <string name="how_to_limb_exercises">मरीज के हाथ एवं पैर की कसरत या वरजिश कैसे करें ?</string>
     <string name="psychological_support">मरीज का मनोबल कैसे बढ़ाएं ?</string>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://C:\Users\frien_000\Desktop\Software Community\StrokeApp\StroleApp\.idea\PGI-App.iml" filepath="C:\Users\frien_000\Desktop\Software Community\StrokeApp\StroleApp\.idea\PGI-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/StroleApp.iml" filepath="$PROJECT_DIR$/StroleApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
