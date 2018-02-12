@@ -5,14 +5,19 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.mapps.stroleapp.R;
+import com.mapps.stroleapp.registration.LoginActivity;
 
 public class ProblemBedsoreActivity extends AppCompatActivity {
 
     private Button pickImageBedsorePatient, submitBedsoreInfo, bedsoreBack;
     private EditText bedsoreDurationInDays;
     private ImageView imageBedsorePatient;
+    private FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,11 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
         bedsoreBack = findViewById(R.id.bedsore_back);
         bedsoreDurationInDays = findViewById(R.id.bedsore_duration_in_days);
         imageBedsorePatient = findViewById(R.id.image_bedsore_patient);
+
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        System.out.print(user.getEmail());
+        Toast.makeText(this, user.getEmail(), Toast.LENGTH_SHORT).show();
 
 
 
