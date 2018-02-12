@@ -1,7 +1,9 @@
 package com.mapps.stroleapp.problemsafterstroke;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -23,7 +25,13 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
         submitBedsoreInfo = findViewById(R.id.submit);
         bedsoreBack = findViewById(R.id.bedsore_back);
         bedsoreDurationInDays = findViewById(R.id.bedsore_duration_in_days);
-        imageBedsorePatient = findViewById(R.id.image_bedsore_patient);
+        bedsoreBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProblemBedsoreActivity.this, ProblemsAfterStrokeActivity.class));
+            }
+        }
+        );
 
 
 

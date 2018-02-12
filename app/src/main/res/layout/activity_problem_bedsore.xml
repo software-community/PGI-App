@@ -4,18 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
 
     <TextView
         android:text="@string/bedsore_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
+        android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 
 
     <EditText
         android:id="@+id/bedsore_duration_in_days"
         android:layout_gravity="center_horizontal"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"
+        android:textCursorDrawable="@null"
+        android:textAlignment="center"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
@@ -23,22 +29,23 @@
         android:text="@string/degree_of_bedsore"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
+        android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/image_bedsore_patient"
-            android:layout_width="200dp"
-            android:layout_height="200dp" />
 
         <Button
             android:id="@+id/pick_image_bedsore_patient"
             android:text="@string/pick_image"
+            android:background="@drawable/button_blue"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -47,6 +54,8 @@
     <Button
         android:id="@+id/submit"
         android:text="@string/submit"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_blue"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -54,6 +63,8 @@
     <Button
         android:id="@+id/bedsore_back"
         android:text="@string/back"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_blue"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

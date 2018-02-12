@@ -23,6 +23,7 @@
         android:textColorHighlight="@color/orange"
         android:backgroundTint="@color/orange"
         android:textCursorDrawable="@null"
+        android:textAlignment="center"
         android:inputType="number"
         android:gravity="center"
         android:layout_width="100dp"
