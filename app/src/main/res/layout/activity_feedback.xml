@@ -2,71 +2,95 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:fillViewport="true"
     tools:context="com.mapps.stroleapp.feedback.FeedbackActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
+            android:background="@drawable/button_blue"
+            android:hint="@string/fill_query"
+            android:textColorHint="@color/grey"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
             android:id="@+id/query"
             android:inputType="textMultiLine"
             android:minLines="6"
-            android:maxLines="10"
-            android:gravity="top|left"
+            android:maxLines="6"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:scrollbars="vertical"
             />
 
-        <Button
-            android:text="@string/submit"
-            android:layout_gravity="right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+
 
         <EditText
+            android:background="@drawable/button_blue"
             android:id="@+id/suggestion"
+            android:hint="@string/suggestions"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/white"
             android:inputType="textMultiLine"
             android:minLines="6"
-            android:maxLines="10"
-            android:gravity="top|left"
+            android:maxLines="6"
+            android:layout_margin="10dp"
+            android:layout_below="@id/query"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:scrollbars="vertical"
             />
 
-        <Button
-            android:text="@string/submit"
-            android:layout_gravity="right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+
 
         <TextView
             android:id="@+id/video_feedback_message"
             android:text="@string/video_feedback_message"
             android:textColor="@android:color/holo_red_dark"
-            android:inputType="textMultiLine"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/suggestion"
             android:layout_width="match_parent"
             android:scrollbars="vertical"
             />
 
         <VideoView
+            android:layout_gravity="center"
             android:id="@+id/video_feedback"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_margin="10dp"
+            android:layout_below="@id/video_feedback_message"
+            android:layout_height="180dp" />
+        <Button
+            android:id="@+id/uploadvideoButton"
+            android:text="Pick Video"
+            android:background="@drawable/button_orange"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_below="@id/video_feedback"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
 
         <Button
-            android:id="@+id/submit"
+            android:id="@+id/btnsubmit"
             android:text="@string/submit"
-            android:layout_gravity="right"
+            android:background="@drawable/button_orange"
+            android:textColor="@color/white"
+            android:layout_below="@id/video_feedback"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
-    </LinearLayout>
+
+    </RelativeLayout>
 
 </ScrollView>

@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
 
     <TextView
         android:text="@string/feeding_tube_duration_in_days"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -17,29 +19,28 @@
         android:id="@+id/feeding_tube_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:inputType="number"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"
+        android:textCursorDrawable="@null"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
     <TextView
         android:text="@string/feeding_tube_last_changed"
         android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
-
-    <TextView
-        android:id="@+id/ftlc_time"
-        android:layout_gravity="center_horizontal"
-        android:text="10:10 AM"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/pick_time_ftlc"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_blue"
         android:text="@string/pick_time"
         android:layout_width="wrap_content"
+        android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 
     <Button
@@ -47,11 +48,14 @@
         android:text="@string/submit"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_blue"
         android:layout_height="wrap_content" />
-
     <Button
         android:id="@+id/feeding_tube_back"
+        android:background="@drawable/button_blue"
         android:text="@string/back"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

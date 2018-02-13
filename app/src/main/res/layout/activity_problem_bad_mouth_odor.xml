@@ -4,11 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
 
     <TextView
         android:text="@string/bad_mouth_odor_duration_in_days"
+        android:inputType="number"
         android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -16,14 +21,21 @@
     <EditText
         android:id="@+id/mouth_odor_duration_in_days"
         android:layout_gravity="center_horizontal"
+        android:textColorHighlight="@color/black"
+        android:backgroundTint="@color/black"
+        android:textCursorDrawable="@null"
+        android:textAlignment="center"
         android:inputType="number"
+        android:gravity="center"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
 
     <Button
         android:id="@+id/submit"
+        android:background="@drawable/button_blue"
         android:text="@string/submit"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -31,6 +43,7 @@
     <Button
         android:id="@+id/back"
         android:text="@string/back"
+        android:background="@drawable/button_blue"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
