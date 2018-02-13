@@ -4,4 +4,6 @@
     <string name="english">English</string>
     <string name="hindi">हिन्दी</string>
     <string name="pgi">Stroke Services\n Department of Neurology\n PGIMER, Chandigarh</string>
+    <string name="software">Managed by Software Community, IIT Ropar</string>
+    <string name="association">PGI Chandigarh in association with IIT ROPAR</string>
 </resources>
