@@ -63,7 +63,7 @@
     <EditText
         android:id="@+id/limb_spasticity_body_name"
         android:layout_gravity="center_horizontal"
-        android:inputType="number"
+        android:inputType="text"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 

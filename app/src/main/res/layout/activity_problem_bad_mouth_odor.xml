@@ -9,6 +9,7 @@
 
     <TextView
         android:text="@string/bad_mouth_odor_duration_in_days"
+        android:inputType="number"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -20,8 +21,8 @@
     <EditText
         android:id="@+id/mouth_odor_duration_in_days"
         android:layout_gravity="center_horizontal"
-        android:textColorHighlight="@color/orange"
-        android:backgroundTint="@color/orange"
+        android:textColorHighlight="@color/black"
+        android:backgroundTint="@color/black"
         android:textCursorDrawable="@null"
         android:textAlignment="center"
         android:inputType="number"

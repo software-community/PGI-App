@@ -40,7 +40,7 @@
     <EditText
         android:id="@+id/patient_temperature"
         android:layout_gravity="center_horizontal"
-        android:inputType="number"
+        android:inputType="number|numberDecimal"
         android:hint="In °F"
         android:textColorHint="@color/grey"
         android:textColorHighlight="@color/orange"
