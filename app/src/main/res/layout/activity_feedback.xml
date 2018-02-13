@@ -68,7 +68,7 @@
             android:layout_height="180dp" />
         <Button
             android:id="@+id/uploadvideoButton"
-            android:text="Pick Video"
+            android:text="@string/pick_video"
             android:background="@drawable/button_orange"
             android:layout_gravity="center"
             android:textColor="@color/white"

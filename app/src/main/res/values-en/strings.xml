@@ -23,6 +23,7 @@
     <string name="submit">Submit</string>
     <string name="back">Back</string>
     <string name="pick_image">Pick Image</string>
+    <string name="pick_video">Pick Video</string>
     <string name="feeding_tube_duration_in_days">Duration of feeding tube in days</string>
     <string name="degree_of_bedsore">Degree of bedsore (please send the real picture of bedsore)</string>
     <string name="feeding_tube_last_changed">When it was last changed ?</string>
@@ -51,7 +52,8 @@
     <string name="medicine_name">Enter medicine name</string>
     <string name="medications_advice">Advise for medications:Do’s:Don’ts:</string>
     <string name="video_feedback_message">Most important: Kindly post here feed back video of the procedure you are performing on your patient e.g. limb exercises so that we can guide you if you are doing any wrong in this procedure</string>
-    <string name="schedule_instructions">Kindly visit room no. 3112 at 3rd floor Neurology OPD (New OPD Block) Patient follow up will be fixed at 1/b 3 months Mobile SMS/ Whats-app messages/E-mails will be sent to the patients as well as caregivers regarding follow ups</string>
+    <string name="schedule_instructions"><ul><li><b>Kindly</b> visit room no. 3112 at 3rd floor Neurology OPD (New OPD Block).</li><li>Patient follow up will be fixed at 1/b 3 months .
+        </li> <li>Mobile SMS/ Whats-app messages/E-mails will be sent to the patients as well as caregivers regarding follow ups</li></ul></string>
     <string name="pick_time">Pick Time</string>
     <string name="bad_mouth_odor_duration_in_days">Duration of bad odour in the patient\'s mouth (in days)</string>
     <string name="shoulder_pain_duration_in_days">Duration of shoulder pain in days</string>

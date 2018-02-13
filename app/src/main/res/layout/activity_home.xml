@@ -16,59 +16,82 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:background="@color/color_dark"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin">
 
-        <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
+
+
+
+
+    <Button
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:id="@+id/what_is_stroke"
             android:text="@string/what_is_stroke"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+
+
+        />
 
         <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:id="@+id/problems_after_stroke"
             android:text="@string/problems_after_stroke"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            />
+
         <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:id="@+id/taking_care_home"
             android:text="@string/taking_care_home"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            />
+
         <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
+
             android:id="@+id/feedback"
             android:text="@string/feedback"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            />
+
         <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/follow_up_schedule"
             android:text="@string/follow_up_schedule"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
 
         <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/sign_out"
             android:text="@string/btn_sign_out"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            />
 
     </LinearLayout>
     </ScrollView>

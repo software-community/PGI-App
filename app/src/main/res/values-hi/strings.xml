@@ -23,6 +23,7 @@
     <string name="submit">जमा करें</string>
     <string name="back">पीछे जाएँ</string>
     <string name="pick_image">फ़ोटो चुनें</string>
+    <string name="pick_video">वीडियो चुनें</string>
     <string name="feeding_tube_duration_in_days">नाक की नली कितने दिनों से लगी है ?</string>
     <string name="degree_of_bedsore">बेडसोर की अवस्था (कृपया बेडसोर की फोटो खींच कर भेजें)</string>
     <string name="feeding_tube_last_changed">नली कब बदली है ?</string>
