@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="@color/color_dark"
     tools:context="com.mapps.stroleapp.careathome.TakingCareHomeActivity">
 
     <include layout="@layout/toolbar"
@@ -16,87 +17,90 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin">
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/what_and_prevention"
             android:text="@string/what_and_prevention"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/how_to_feed"
             android:text="@string/how_to_feed"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
+
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/mouth_care"
             android:text="@string/mouth_care"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/urinary_catheter_care"
             android:text="@string/urinary_catheter_care"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/how_to_limb_exercises"
             android:text="@string/how_to_limb_exercises"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/psychological_support"
             android:text="@string/psychological_support"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/dos_and_donts"
             android:text="@string/dos_and_donts"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
-            android:layout_margin="@dimen/button_margins"
             android:id="@+id/taking_care_back"
             android:text="@string/back"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="@dimen/back_button_width"
-            android:layout_height="@dimen/back_button_height" />
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"/>
     </LinearLayout>
     </ScrollView>
 
