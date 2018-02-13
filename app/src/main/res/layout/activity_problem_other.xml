@@ -15,21 +15,21 @@
     <EditText
         android:id="@+id/ohp_one"
         android:layout_gravity="center_horizontal"
-        android:inputType="number"
+        android:inputType="text"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/ohp_two"
         android:layout_gravity="center_horizontal"
-        android:inputType="number"
+        android:inputType="text"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/ohp_three"
         android:layout_gravity="center_horizontal"
-        android:inputType="number"
+        android:inputType="text"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
