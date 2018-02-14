@@ -38,6 +38,7 @@
             android:layout_width="0dp"
             android:layout_weight="9"
             android:layout_height="match_parent"
+            android:background="@drawable/linear_layout_border"
             >
         <ImageView
             android:layout_width="match_parent"
@@ -45,7 +46,8 @@
             android:layout_gravity="center_horizontal"
             android:padding="3dp"
             android:src="@drawable/textgram_1518451132"
-           />
+            android:background="@drawable/image_view_border"
+            />
 
         </LinearLayout>
 
@@ -57,7 +59,8 @@
             android:layout_width="0dp"
             android:layout_weight="9"
             android:layout_height="match_parent"
-
+            android:background="@drawable/linear_layout_border"
+            android:padding="3dip"
             >
 
         <ImageView
@@ -67,6 +70,8 @@
             android:layout_gravity="center_horizontal"
             android:padding="3dp"
             android:src="@drawable/textgram_1518451166"
+
+            android:background="@drawable/image_view_border"
             />
         </LinearLayout>
 

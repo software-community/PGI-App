@@ -7,8 +7,6 @@
     android:background="@color/color_dark"
     tools:context="com.mapps.stroleapp.careathome.TakingCareHomeActivity">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
 
     <ScrollView
         android:layout_below="@+id/toolbar"

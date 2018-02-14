@@ -6,8 +6,6 @@
     android:orientation="vertical"
     tools:context="com.mapps.stroleapp.careathome.BedsoreWhatAndPreventionHomeActivity">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
 
     <Button
         android:background="@drawable/button_blue"

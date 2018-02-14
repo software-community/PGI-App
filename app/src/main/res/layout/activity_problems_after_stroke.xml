@@ -8,8 +8,6 @@
     android:fillViewport="true"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemsAfterStrokeActivity">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
 
     <ScrollView
         android:layout_below="@+id/toolbar"
