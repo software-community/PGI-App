@@ -28,7 +28,8 @@
         android:text="@string/urinary_catheter_last_changed"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
 
 
 
@@ -37,7 +38,8 @@
         android:layout_gravity="center_horizontal"
         android:text="10:10 AM"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/pick_time_uclc"
@@ -45,7 +47,8 @@
         android:text="Pick Time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"/>
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:id="@+id/submit"
@@ -53,7 +56,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"/>
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:id="@+id/urinary_catheter_back"
@@ -61,7 +65,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"/>
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"/>
 
 
 
