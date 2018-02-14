@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapps.stroleapp.careathome.DosAndDontsActivity">
+    tools:context="com.mapps.stroleapp.careathome.DosAndDontsActivity"
+    android:background="@color/color_dark">
 
     <LinearLayout
         android:orientation="vertical"
@@ -11,8 +12,8 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:layout_margin="@dimen/button_margins"
             android:id="@+id/hw_soap_and_water"
             android:text="@string/hw_soap_and_water"
@@ -20,8 +21,8 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:background="@drawable/button_blue"
-            android:textColor="@color/white"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:layout_margin="@dimen/button_margins"
             android:id="@+id/hw_hand_rub"
             android:text="@string/hw_hand_rub"
@@ -33,12 +34,13 @@
             android:layout_gravity="center_horizontal"
             android:text="@string/medications_advice"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"/>
 
     </LinearLayout>
 
     <Button
-        android:background="@drawable/button_blue"
+        android:background="@null"
         android:textColor="@color/white"
         android:layout_margin="@dimen/button_margins"
         android:id="@+id/back"
