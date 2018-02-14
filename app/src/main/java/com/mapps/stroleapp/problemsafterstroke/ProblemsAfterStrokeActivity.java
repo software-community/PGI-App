@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.mapps.stroleapp.HomeActivity;
 import com.mapps.stroleapp.R;
 
 public class ProblemsAfterStrokeActivity extends AppCompatActivity {
 
     private Button problemBedsore, problemFeedingTube, problemUrinaryCatheter, problemBadMouthOdor,
-            problemShoulderPain, problemLinkWeekness, problemLimbSpasticity, problemFever, problemOther;
+            problemShoulderPain, problemLinkWeekness, problemLimbSpasticity, problemFever, problemOther, problemBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class ProblemsAfterStrokeActivity extends AppCompatActivity {
         problemLimbSpasticity = findViewById(R.id.problem_limb_spasticity);
         problemFever = findViewById(R.id.problem_fever);
         problemOther = findViewById(R.id.problem_other);
+        problemBack = findViewById(R.id.problem_back);
 
         problemBedsore.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +90,13 @@ public class ProblemsAfterStrokeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProblemsAfterStrokeActivity.this, ProblemHomeActivity.class));
+            }
+        });
+
+        problemBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProblemsAfterStrokeActivity.this, HomeActivity.class));
             }
         });
 
