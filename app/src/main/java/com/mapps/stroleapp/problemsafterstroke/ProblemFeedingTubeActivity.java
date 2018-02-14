@@ -21,7 +21,7 @@ public class ProblemFeedingTubeActivity extends AppCompatActivity {
     private int mYear, mMonth, mDay;
     private int[] date;
     private boolean d;
-
+    private Button temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class ProblemFeedingTubeActivity extends AppCompatActivity {
         );
     }
     public void onClick(View v) {
-        Button temp = (Button) v;
+        temp = (Button) v;
         // Get Current Date
         final Calendar c = Calendar.getInstance();
         mYear = c.get(Calendar.YEAR);
@@ -49,7 +49,7 @@ public class ProblemFeedingTubeActivity extends AppCompatActivity {
         mDay = c.get(Calendar.DAY_OF_MONTH);
 
 
-        DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this,R.style.TimePickerTheme,
                 new DatePickerDialog.OnDateSetListener() {
 
                     @Override

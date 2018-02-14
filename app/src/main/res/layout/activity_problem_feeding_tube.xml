@@ -39,14 +39,16 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/pick_time_ftlc"
+        android:id="@+id/pick_time"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/roundbutton"
         android:textColor="@color/colorAccent"
-        android:text="@string/pick_time"
+        android:text="Pick date"
+        android:onClick="onClick"
         android:layout_width="wrap_content"
         android:layout_margin="10dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+         />
 
     <Button
         android:id="@+id/submit"
