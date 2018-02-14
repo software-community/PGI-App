@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:layout_margin="@dimen/button_margins"
             android:id="@+id/self_assisted_range_upper_limbs"
             android:text="@string/self_assisted_range_upper_limbs"
@@ -23,7 +23,7 @@
 
         <Button
             android:background="@drawable/roundbutton"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:layout_margin="@dimen/button_margins"
             android:id="@+id/active_range_upper_limbs"
             android:text="@string/active_range_upper_limbs"
@@ -32,7 +32,7 @@
 
         <Button
             android:background="@drawable/roundbutton"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:layout_margin="@dimen/button_margins"
             android:id="@+id/exercise_trunk_or_hips"
             android:text="@string/exercise_trunk_or_hips"

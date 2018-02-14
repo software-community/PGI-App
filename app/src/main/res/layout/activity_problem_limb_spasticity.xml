@@ -4,52 +4,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/color_dark"
+    android:gravity="center"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
 
     <TextView
         android:text="@string/limb_spasticity_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.Base"
+        android:layout_gravity="center_horizontal"
+        >
 
     <EditText
         android:id="@+id/limb_spasticity_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:inputType="number"
         android:layout_width="100dp"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"/>
+    </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:text="@string/limb_spasticity_side"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"/>
 
     <RadioGroup
         android:id="@+id/limb_spasticity_side"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
         <RadioButton
             android:id="@+id/ls_left"
             android:text="@string/left"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"/>
 
         <RadioButton
             android:id="@+id/ls_right"
             android:text="@string/right"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"/>
 
         <RadioButton
             android:id="@+id/ls_both"
             android:text="@string/both"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"/>
 
     </RadioGroup>
 
@@ -58,28 +76,50 @@
         android:text="@string/limb_spasticity_body_name"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:textColor="@color/white"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.Base"
+        android:layout_gravity="center_horizontal"
+        >
 
     <EditText
         android:id="@+id/limb_spasticity_body_name"
         android:layout_gravity="center_horizontal"
         android:inputType="text"
         android:layout_width="100dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"/>
+
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/submit"
         android:text="@string/submit"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/back"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="10dp"
+        />
 
 
 

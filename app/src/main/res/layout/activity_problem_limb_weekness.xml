@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity"
-    android:background="@color/color_dark">
+    android:background="@color/color_dark"
+    android:gravity="center">
 
     <TextView
         android:text="@string/limbs_weekness_duration_in_days"
@@ -24,15 +25,21 @@
     <EditText
         android:id="@+id/limbs_weekness_duration_in_days"
         android:inputType="number"
+        android:textColor="@color/white"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"
+        />
 
     </android.support.design.widget.TextInputLayout>
     <TextView
         android:text="@string/limb_weekness_side"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
 
     <RadioGroup
         android:id="@+id/limb_weekness_side"
@@ -43,18 +50,21 @@
         <RadioButton
             android:id="@+id/lw_left"
             android:text="@string/left"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <RadioButton
             android:id="@+id/lw_right"
             android:text="@string/right"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <RadioButton
             android:id="@+id/lw_both"
             android:text="@string/both"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -65,13 +75,18 @@
         android:text="@string/submit"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:id="@+id/back"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"/>
 
 </LinearLayout>

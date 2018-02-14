@@ -13,11 +13,10 @@
         android:inputType="number"
         android:layout_gravity="center_horizontal"
         android:background="@null"
-        android:textColor="@color/colorAccent"
-        android:textSize="20dip"
+        android:textColor="@color/white"
         android:gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="60dip" />
+        android:layout_height="100dip" />
 
 <!--Todo
 modify textview creating some problems
@@ -25,13 +24,14 @@ modify textview creating some problems
     <EditText
         android:id="@+id/mouth_odor_duration_in_days"
         android:layout_gravity="center_horizontal"
-        android:textColorHighlight="@color/white"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"
         android:textColor="@color/white"
         android:textCursorDrawable="@null"
         android:textAlignment="center"
         android:inputType="number"
         android:gravity="center"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
 

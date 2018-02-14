@@ -23,7 +23,7 @@
         android:inputType="number"
         android:textColorHighlight="@color/orange"
         android:backgroundTint="@color/orange"
-        android:textColor="@color/orange"
+        android:textColor="@color/white"
         android:textCursorDrawable="@null"
         android:textAlignment="center"
         android:layout_margin="10dp"
@@ -38,17 +38,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <EditText
+
+
+    <Button
         android:id="@+id/pick_date"
         android:layout_gravity="center_horizontal"
-        android:inputType="date"
-        android:textColorHighlight="@color/orange"
-        android:backgroundTint="@color/orange"
-        android:textColor="@color/orange"
-        android:textCursorDrawable="@null"
-        android:layout_width="100dp"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"
+        android:text="Pick date"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
         android:layout_margin="10dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+         />
 
     <Button
         android:id="@+id/submit"

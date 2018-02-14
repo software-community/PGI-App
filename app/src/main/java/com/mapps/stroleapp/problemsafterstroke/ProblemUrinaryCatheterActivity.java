@@ -1,11 +1,21 @@
 package com.mapps.stroleapp.problemsafterstroke;
 
+
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+
+import android.app.DatePickerDialog;
+import android.icu.util.Calendar;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,10 +28,19 @@ import com.mapps.stroleapp.R;
 
 public class ProblemUrinaryCatheterActivity extends AppCompatActivity {
 
-    private Button submit , back;
-    private EditText urinary_catheter_duration_in_days , pick_date;
+
+    private Button submit , back , pick_date;
+    private EditText urinary_catheter_duration_in_days ;
     private DatabaseReference databaseUrinary ;
     private String userEmail ;
+
+
+
+
+    private int mYear, mMonth, mDay;
+    private int[] date;
+    private boolean d;
+    private Button temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,5 +87,32 @@ public class ProblemUrinaryCatheterActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    public void onClick(View v) {
+        temp = (Button) v;
+        // Get Current Date
+        final Calendar c = Calendar.getInstance();
+        mYear = c.get(Calendar.YEAR);
+        mMonth = c.get(Calendar.MONTH);
+        mDay = c.get(Calendar.DAY_OF_MONTH);
+
+
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this,R.style.TimePickerTheme,
+                new DatePickerDialog.OnDateSetListener() {
+
+                    @Override
+                    public void onDateSet(DatePicker view, int year,
+                                          int monthOfYear, int dayOfMonth) {
+
+                        temp.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+                        date = new int[]{dayOfMonth, monthOfYear + 1, year};
+                        d = true;
+
+
+                    }
+                }, mYear, mMonth, mDay);
+        datePickerDialog.show();
     }
 }

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity"
     android:background="@color/color_dark">
 
@@ -12,7 +13,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/white"
+        />
 
 
     <EditText
@@ -21,8 +23,10 @@
         android:inputType="number"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:textColorHighlight="@color/white"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"/>
 
 
     <Button
@@ -32,7 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbutton"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorAccent"
+        android:layout_margin="10dp"/>
 
     <Button
         android:id="@+id/back"
@@ -41,7 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbutton"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorAccent"
+        android:layout_margin="10dp"/>
 
 
 

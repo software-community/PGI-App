@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity"
-    android:background="@color/color_dark">
+    android:background="@color/color_dark"
+    android:gravity="center">
 
     <TextView
         android:text="@string/urinary_catheter_duration_in_days"
@@ -31,23 +32,26 @@
         android:text="@string/urinary_catheter_last_changed"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
 
 
 
 
 
-    <EditText
+
+
+    <Button
         android:id="@+id/pick_date"
         android:layout_gravity="center_horizontal"
-        android:inputType="date"
-        android:layout_width="100dp"
+        android:text="@string/pick_time"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColorHighlight="@color/orange"
-        android:backgroundTint="@color/orange"
-        android:textColor="@color/orange"
-        android:textCursorDrawable="@null"
-        />
+        android:background="@drawable/roundbutton"
+        android:layout_margin="10dp"
+        android:onClick="onClick"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:id="@+id/submit"
@@ -55,7 +59,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"/>
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/back"
@@ -63,7 +69,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"/>
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="10dp"/>
 
 
 
