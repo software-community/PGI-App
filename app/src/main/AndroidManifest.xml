@@ -21,11 +21,7 @@
         </activity>
         <activity android:name=".LanguageActivity"
             android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
 
         </activity>
         <activity android:name=".RoleActivity"
@@ -68,8 +64,14 @@
         <activity android:name=".careathome.ActiveRangeExercisesActivity" />
         <activity android:name=".careathome.DosAndDontsActivity" />
         <activity android:name=".registration.ResetPasswordActivity" />
-        <activity android:name=".registration.LoginActivity" />
+        <activity android:name=".registration.LoginActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
         <activity android:name=".whatisstroke.WhatIsStrokeVideoActivity"
             android:label="my_player_activity"
             android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"

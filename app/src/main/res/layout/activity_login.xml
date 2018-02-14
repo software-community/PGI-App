@@ -38,7 +38,6 @@
             android:layout_width="0dp"
             android:layout_weight="9"
             android:layout_height="match_parent"
-            android:background="@drawable/linear_layout_border"
             >
         <ImageView
             android:layout_width="match_parent"
@@ -46,7 +45,7 @@
             android:layout_gravity="center_horizontal"
             android:padding="3dp"
             android:src="@drawable/textgram_1518451132"
-            android:background="@drawable/image_view_border"/>
+           />
 
         </LinearLayout>
 
@@ -58,17 +57,17 @@
             android:layout_width="0dp"
             android:layout_weight="9"
             android:layout_height="match_parent"
-            android:background="@drawable/linear_layout_border"
+
             >
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="7"
+
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:padding="3dp"
             android:src="@drawable/textgram_1518451166"
-            android:background="@drawable/image_view_border"/>
+            />
         </LinearLayout>
 
         <View
@@ -117,9 +116,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dip"
-            android:background="@drawable/roundbutton"
             android:text="@string/btn_login"
+            android:background="@drawable/roundbutton"
             android:textColor="@color/colorAccent"
+            android:theme="@drawable/roundbutton"
              />
 
         <Button
