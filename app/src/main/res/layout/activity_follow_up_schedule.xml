@@ -3,12 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapps.stroleapp.schedule.FollowUpScheduleActivity">
+    tools:context="com.mapps.stroleapp.schedule.FollowUpScheduleActivity"
+    >
+
+
 
     <TextView
         android:id="@+id/schedule_instructions"
         android:text="@string/schedule_instructions"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/button_blue"/>
 
 </RelativeLayout>

@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapps.stroleapp.LanguageActivity">
-
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
+    android:background="@color/color_dark"
+    tools:context="com.mapps.stroleapp.LanguageActivity"
+    >
 
     <LinearLayout
         android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
         android:id="@+id/select_lang"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
         <TextView
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textAlignment="center"
             android:text="@string/select_language"
@@ -33,22 +33,23 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:background="@drawable/button_blue"
+            android:background="@drawable/roundbutton"
             android:id="@+id/lang_hindi"
             android:text="@string/hindi"
             android:layout_width="250dp"
+
             android:layout_marginBottom="100dp"
             android:layout_height="80dp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/btn_txt_size_large"/>
 
         <Button
-            android:background="@drawable/button_blue"
+            android:background="@drawable/roundbutton"
             android:id="@+id/lang_english"
             android:text="@string/english"
             android:layout_width="250dp"
             android:layout_height="80dp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/btn_txt_size_large"/>
 
     </LinearLayout>
@@ -56,7 +57,7 @@
 
 
     <RelativeLayout
-        android:background="@drawable/pgi_info"
+        android:background="@color/color_dark"
         android:layout_margin="@dimen/layout_margin"
         android:padding="20dp"
         android:layout_alignParentBottom="true"
@@ -64,7 +65,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:text="@string/pgi"
             android:textAlignment="center"
             android:layout_centerInParent="true"
@@ -72,5 +73,4 @@
             android:layout_height="wrap_content" />
 
     </RelativeLayout>
-
 </RelativeLayout>

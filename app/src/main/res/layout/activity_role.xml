@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mapps.stroleapp.RoleActivity">
+    tools:context="com.mapps.stroleapp.RoleActivity"
+    android:background="@color/color_dark">
 
-    <include layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -16,8 +15,8 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:id="@+id/role_care_giver"
             android:text="@string/role_caregiver"
             android:layout_gravity="center_horizontal"
@@ -27,8 +26,8 @@
             android:textSize="@dimen/btn_txt_size_medium"/>
 
         <Button
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:id="@+id/role_patient"
             android:text="@string/role_patient"
             android:layout_below="@+id/role_care_giver"

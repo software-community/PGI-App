@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="true"
+    android:background="@color/color_dark"
     tools:context="com.mapps.stroleapp.feedback.FeedbackActivity">
 
     <RelativeLayout
@@ -12,11 +13,11 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:background="@drawable/button_blue"
+            android:background="@drawable/roundbutton"
             android:hint="@string/fill_query"
             android:textColorHint="@color/grey"
             android:layout_margin="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:id="@+id/query"
             android:inputType="textMultiLine"
             android:minLines="6"
@@ -30,11 +31,11 @@
 
 
         <EditText
-            android:background="@drawable/button_blue"
+            android:background="@drawable/roundbutton"
             android:id="@+id/suggestion"
             android:hint="@string/suggestions"
-            android:textColorHint="@color/grey"
-            android:textColor="@color/white"
+            android:textColorHint="#c6c1be"
+            android:textColor="@color/colorAccent"
             android:inputType="textMultiLine"
             android:minLines="6"
             android:maxLines="6"
@@ -51,7 +52,7 @@
         <TextView
             android:id="@+id/video_feedback_message"
             android:text="@string/video_feedback_message"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="#F48642"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_below="@id/suggestion"
@@ -68,10 +69,10 @@
             android:layout_height="180dp" />
         <Button
             android:id="@+id/uploadvideoButton"
-            android:text="Pick Video"
-            android:background="@drawable/button_orange"
+            android:text="@string/pick_video"
+            android:background="@drawable/roundbutton"
             android:layout_gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/colorAccent"
             android:layout_below="@id/video_feedback"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
@@ -81,8 +82,8 @@
         <Button
             android:id="@+id/btnsubmit"
             android:text="@string/submit"
-            android:background="@drawable/button_orange"
-            android:textColor="@color/white"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
             android:layout_below="@id/video_feedback"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
