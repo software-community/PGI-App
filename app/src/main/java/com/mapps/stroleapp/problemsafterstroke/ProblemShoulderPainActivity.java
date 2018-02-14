@@ -45,8 +45,10 @@ public class ProblemShoulderPainActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!TextUtils.isEmpty(days_shoulder_pain.getText().toString().trim()))
+                if (!TextUtils.isEmpty(days_shoulder_pain.getText().toString().trim())){
                     submitInfo();
+                    startActivity(new Intent(ProblemShoulderPainActivity.this, ProblemsAfterStrokeActivity.class));
+                }
                 else {
                     Toast.makeText(getApplicationContext() , "Please fill the shoulder pain days" , Toast.LENGTH_LONG).show();
                 }

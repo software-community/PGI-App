@@ -45,8 +45,9 @@ public class ProblemBadMouthOdorActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!TextUtils.isEmpty(days_mouth_odor.getText().toString().trim()))
+                if (!TextUtils.isEmpty(days_mouth_odor.getText().toString().trim())){
                     submitInfo();
+                    startActivity(new Intent(ProblemBadMouthOdorActivity.this, ProblemsAfterStrokeActivity.class));}
                 else {
                     Toast.makeText(getApplicationContext() , "Please fill the mouth odor days" , Toast.LENGTH_LONG).show();
                 }

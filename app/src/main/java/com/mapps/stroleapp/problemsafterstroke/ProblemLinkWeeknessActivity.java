@@ -65,8 +65,10 @@ public class ProblemLinkWeeknessActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!TextUtils.isEmpty(limbs_weekness_duration_in_days.getText().toString().trim()) && weekness != null)
+                if (!TextUtils.isEmpty(limbs_weekness_duration_in_days.getText().toString().trim()) && weekness != null){
                     submitInfo();
+                    startActivity(new Intent(ProblemLinkWeeknessActivity.this, ProblemsAfterStrokeActivity.class));
+                }
                 else {
                     Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();
                 }

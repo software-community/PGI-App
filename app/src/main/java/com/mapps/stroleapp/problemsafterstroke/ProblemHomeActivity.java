@@ -59,6 +59,7 @@ public class ProblemHomeActivity extends AppCompatActivity {
 
                 if (fillDetails){
                     submitInfo();
+                    startActivity(new Intent(ProblemHomeActivity.this, ProblemsAfterStrokeActivity.class));
                 }
                 else {
                     Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();

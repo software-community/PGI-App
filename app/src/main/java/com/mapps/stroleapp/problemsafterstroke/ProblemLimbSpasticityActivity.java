@@ -67,8 +67,9 @@ public class ProblemLimbSpasticityActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!TextUtils.isEmpty(limb_spasticity_duration_in_days.getText().toString().trim()) && spasticity != null && !TextUtils.isEmpty(limb_spasticity_body_name.getText().toString().trim()))
+                if (!TextUtils.isEmpty(limb_spasticity_duration_in_days.getText().toString().trim()) && spasticity != null && !TextUtils.isEmpty(limb_spasticity_body_name.getText().toString().trim())){
                     submitInfo();
+                    startActivity(new Intent(ProblemLimbSpasticityActivity.this, ProblemsAfterStrokeActivity.class));}
                 else {
                     Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();
                 }

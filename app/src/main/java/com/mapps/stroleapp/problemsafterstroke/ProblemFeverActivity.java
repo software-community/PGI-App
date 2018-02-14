@@ -79,9 +79,11 @@ public class ProblemFeverActivity extends AppCompatActivity {
 
                     if (showMedicine && !TextUtils.isEmpty(fever_medicine_name.getText().toString().trim()) ) {
                         submitInfo();
+                        startActivity(new Intent(ProblemFeverActivity.this, ProblemsAfterStrokeActivity.class));
                     }
                     else if (!showMedicine) {
                         submitInfo() ;
+                        startActivity(new Intent(ProblemFeverActivity.this, ProblemsAfterStrokeActivity.class));
                     }
                     else {
                         Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();

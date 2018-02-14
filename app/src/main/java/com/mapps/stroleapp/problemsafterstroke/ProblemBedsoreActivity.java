@@ -131,6 +131,7 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
                             uploadedFilePath = downloadUrl.toString();
                             //Toast.makeText(getApplicationContext(),"Upload finish", Toast.LENGTH_SHORT).show();
                             submitInfo(uploadedFilePath);
+                            startActivity(new Intent(ProblemBedsoreActivity.this, ProblemsAfterStrokeActivity.class));
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
