@@ -28,17 +28,12 @@
 
 
 
-    <TextView
-        android:id="@+id/uclc_time"
-        android:layout_gravity="center_horizontal"
-        android:text="10:10 AM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/pick_time_uclc"
+
+    <EditText
+        android:id="@+id/pick_date"
         android:layout_gravity="center_horizontal"
-        android:text="Pick Time"
+        android:inputType="date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -50,7 +45,7 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/urinary_catheter_back"
+        android:id="@+id/back"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"

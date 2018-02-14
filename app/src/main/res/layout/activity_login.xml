@@ -40,13 +40,13 @@
             android:layout_height="match_parent"
             android:background="@drawable/linear_layout_border"
             >
-        <ImageView
+        <!--ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:padding="3dp"
             android:src="@drawable/textgram_1518451132"
-            android:background="@drawable/image_view_border"/>
+            android:background="@drawable/image_view_border"/-->
 
         </LinearLayout>
 
@@ -63,7 +63,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_weight="7"
+            tools:ignore="contentDescription"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:padding="3dp"

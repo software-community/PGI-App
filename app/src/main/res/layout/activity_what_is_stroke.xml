@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.mapps.stroleapp.whatisstroke.WhatIsStrokeVideoActivity">
 
-    <LinearLayout
+    <WebView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:textSize="40sp"
-            android:layout_margin="@dimen/button_margins"
-            android:background="@drawable/button_blue"
-            android:text="@string/what_is_stroke"/>
-    </LinearLayout>
+        android:id="@+id/webview"
+        android:layout_height="match_parent">
+    </WebView>
 
-</ScrollView>
+
+</android.support.constraint.ConstraintLayout>
