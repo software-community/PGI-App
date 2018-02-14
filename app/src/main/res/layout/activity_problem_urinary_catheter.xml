@@ -4,21 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
+    tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity"
+    android:background="@color/color_dark">
 
     <TextView
         android:text="@string/urinary_catheter_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
 
 
     <EditText
         android:id="@+id/urinary_catheter_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:inputType="number"
+        android:textColorHighlight="@color/white"
         android:layout_width="100dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
 
     <TextView
         android:text="@string/urinary_catheter_last_changed"
@@ -40,21 +44,24 @@
         android:layout_gravity="center_horizontal"
         android:text="Pick Time"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"/>
 
     <Button
         android:id="@+id/submit"
         android:text="@string/submit"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"/>
 
     <Button
         android:id="@+id/urinary_catheter_back"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"/>
 
 
 

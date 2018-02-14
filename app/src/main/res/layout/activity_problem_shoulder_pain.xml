@@ -4,13 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
+    tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity"
+    android:background="@color/color_dark">
 
     <TextView
         android:text="@string/shoulder_pain_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"/>
 
 
     <EditText
@@ -18,7 +20,9 @@
         android:layout_gravity="center_horizontal"
         android:inputType="number"
         android:layout_width="100dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColorHighlight="@color/white"
+        android:textColor="@color/white"/>
 
 
     <Button
@@ -26,14 +30,18 @@
         android:text="@string/submit"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:id="@+id/back"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"/>
 
 
 

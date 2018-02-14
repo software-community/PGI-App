@@ -33,7 +33,7 @@ modify textview creating some problems
         android:gravity="center"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundbutton"
+
 
         />
 <!-- Todo
