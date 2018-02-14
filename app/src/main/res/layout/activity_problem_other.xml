@@ -4,27 +4,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity">
+    tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity"
+    android:background="@color/color_dark">
 
     <TextView
         android:text="@string/other_health_problems"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/Theme.App.Base">
 
     <EditText
         android:id="@+id/ohp_one"
-        android:layout_gravity="center_horizontal"
         android:inputType="text"
         android:layout_width="100dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.Base"
+        android:layout_gravity="center_horizontal"
+        >
 
     <EditText
         android:id="@+id/ohp_two"
-        android:layout_gravity="center_horizontal"
         android:inputType="text"
         android:layout_width="100dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.Base"
+        android:layout_gravity="center_horizontal"
+        >
 
     <EditText
         android:id="@+id/ohp_three"
@@ -33,13 +58,20 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
 
-
+    </android.support.design.widget.TextInputLayout>
     <TextView
         android:text="@string/other_problems_no_of_days"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.App.Base"
+        android:layout_gravity="center_horizontal"
+        >
 
     <EditText
         android:id="@+id/other_problems_no_of_days"
@@ -47,21 +79,25 @@
         android:inputType="number"
         android:layout_width="100dp"
         android:layout_height="wrap_content" />
-
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/submit"
         android:text="@string/submit"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent"/>
 
     <Button
         android:id="@+id/back"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/colorAccent" />
 
 
 
