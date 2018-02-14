@@ -3,6 +3,9 @@ package com.mapps.stroleapp.careathome;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 import com.afollestad.easyvideoplayer.EasyVideoCallback;
 import com.afollestad.easyvideoplayer.EasyVideoPlayer;
@@ -10,89 +13,55 @@ import com.mapps.stroleapp.R;
 
 import java.util.Locale;
 
-public class SelfAssistedRangeUpperLimbsVideoActivity extends AppCompatActivity implements EasyVideoCallback {
+public class SelfAssistedRangeUpperLimbsVideoActivity extends AppCompatActivity  {
 
-    private EasyVideoPlayer player;
+    private WebView mWebView;
+    private boolean mIsPaused = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_what_is_stroke);
+
+        mWebView = (WebView) findViewById(R.id.webview);
+        mWebView.clearCache(true);
+        mWebView.clearHistory();
+        mWebView.getSettings().setJavaScriptEnabled(true);
+        mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        mWebView.setWebChromeClient(new WebChromeClient());
+        String url = getString(R.string.url_selfUpperLimbs ) ;
 
 
-        setContentView(R.layout.activity_video_player);
 
-        // Grabs a reference to the player view
-        player = (EasyVideoPlayer) findViewById(R.id.player);
+        WebSettings ws = mWebView.getSettings();
+        ws.setBuiltInZoomControls(true);
+        ws.setJavaScriptEnabled(true);
 
-        // Sets the callback to this Activity, since it inherits EasyVideoCallback
-        player.setCallback(this);
+        mIsPaused = true;
+        //resumeBrowser();
+        //mWebView.loadUrl(media_url);*/
+        String html = "<style>\n" +
+                ".video-container { \n" +
+                "position: relative; \n" +
+                "padding-bottom: 56.25%; \n" +
+                "padding-top: 35px; \n" +
+                "height: 0; \n" +
+                "overflow: hidden; \n" +
+                "}\n" +
+                ".video-container iframe { \n" +
+                "position: absolute; \n" +
+                "top:0; \n" +
+                "left: 0; \n" +
+                "width: 100%; \n" +
+                "height: 100%; \n" +
+                "}\n" +
+                "</style>\n" +
+                "<div class=\"video-container\">\n" +
+                "    <iframe id='iframe' onclick='myfunction()' src=\""+url+"\" allowfullscreen=\" allowfullscreen\" frameborder=\"0\">\n" +
+                "    </iframe>\n" +
+                "</div>";
+        mWebView.loadData(html, "text/html", null);
 
-        // Sets the source to the HTTP URL held in the TEST_URL variable.
-        // To play files, you can use Uri.fromFile(new File("..."))
-
-        if (Locale.getDefault().getLanguage().equals("en")) {
-            player.setSource(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.demo));
-        } else if (Locale.getDefault().getLanguage().equals("hi")) {
-            player.setSource(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.demo));
-        }
-
-        // From here, the player view will show a progress indicator until the player is prepared.
-        // Once it's prepared, the progress indicator goes away and the controls become enabled for the user to begin playback.
-
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        // Make sure the player stops playing if the user presses the home button.
-        player.pause();
-    }
-
-    // Methods for the implemented EasyVideoCallback
-
-    @Override
-    public void onPreparing(EasyVideoPlayer player) {
-        // TODO handle if needed
-    }
-
-    @Override
-    public void onPrepared(EasyVideoPlayer player) {
-        // TODO handle
-        player.setAutoPlay(true);
-    }
-
-    @Override
-    public void onBuffering(int percent) {
-        // TODO handle if needed
-    }
-
-    @Override
-    public void onError(EasyVideoPlayer player, Exception e) {
-        // TODO handle
-    }
-
-    @Override
-    public void onCompletion(EasyVideoPlayer player) {
-        // TODO handle if needed
-    }
-
-    @Override
-    public void onRetry(EasyVideoPlayer player, Uri source) {
-        // TODO handle if used
-    }
-
-    @Override
-    public void onSubmit(EasyVideoPlayer player, Uri source) {
-        // TODO handle if used
-    }
-
-    @Override
-    public void onStarted(EasyVideoPlayer player) {
-        // TODO handle if needed
-    }
-
-    @Override
-    public void onPaused(EasyVideoPlayer player) {
-        // TODO handle if needed
     }
 }
+

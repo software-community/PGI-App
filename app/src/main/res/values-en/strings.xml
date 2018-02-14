@@ -107,4 +107,21 @@
     <string name="btn_sign_out">Sign Out</string>
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="url_whatIsStroke">https://www.youtube.com/embed/-Oqy9Aj5FRY </string>
+    <string name="url_whatIsBedSore">https://www.youtube.com/embed/cME_Tw5HfaQ</string>
+    <string name="url_backCare">https://www.youtube.com/embed/xVDmCIOBsx4</string>
+    <string name="url_obliquePosition">https://www.youtube.com/embed/tvwsWj3UpLI</string>
+    <string name="url_bedsoreDressing">https://www.youtube.com/embed/7rwVFJLHFSA</string>
+    <string name="url_sterileArticles">https://www.youtube.com/embed/-x5IfvdFAok</string>
+    <string name="url_feedPatient">https://www.youtube.com/embed/KA1fldPRWKY</string>
+    <string name="url_careMouth">https://www.youtube.com/embed/sZxM3KcaGkY</string>
+    <string name = "url_urinaryCatheter">https://www.youtube.com/embed/NMjW9h-bE2M</string>
+    <string name="url_upperLimbs">https://www.youtube.com/embed/tLI3ypC7I7k</string>
+    <string name="url_lowerLimbs">https://www.youtube.com/embed/FlvCAOjeRuM</string>
+    <string name="url_selfUpperLimbs">https://www.youtube.com/embed/neMufk7jFDM</string>
+    <string name="url_activeUpperLimbs">https://www.youtube.com/embed/GcC6TCysJhc</string>
+    <string name="url_hipExercise">https://www.youtube.com/embed/Dx-4yZk-0JY</string>
+    <string name="url_pyschologySupport">https://www.youtube.com/embed/Ra7Ilr-g7ng</string>
+    <string name="url_handWashing">https://www.youtube.com/embed/XmmA6wMHSZ4</string>
+    <string name="url_handWashinghandRub">https://www.youtube.com/embed/MYrfMTsy_Es</string>
 </resources>

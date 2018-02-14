@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import com.afollestad.easyvideoplayer.EasyVideoCallback;
 import com.afollestad.easyvideoplayer.EasyVideoPlayer;
@@ -31,6 +32,9 @@ public class WhatIsStrokeVideoActivity extends AppCompatActivity{
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         mWebView.setWebChromeClient(new WebChromeClient());
+        String url = getString(R.string.url_whatIsStroke ) ;
+
+
 
         WebSettings ws = mWebView.getSettings();
         ws.setBuiltInZoomControls(true);
@@ -56,7 +60,7 @@ public class WhatIsStrokeVideoActivity extends AppCompatActivity{
                 "}\n" +
                 "</style>\n" +
                 "<div class=\"video-container\">\n" +
-                "    <iframe id='iframe' onclick='myfunction()' src=\"https://www.youtube.com/embed/-Oqy9Aj5FRY\" allowfullscreen=\" allowfullscreen\" frameborder=\"0\">\n" +
+                "    <iframe id='iframe' onclick='myfunction()' src=\""+url+"\" allowfullscreen=\" allowfullscreen\" frameborder=\"0\">\n" +
                 "    </iframe>\n" +
                 "</div>";
         mWebView.loadData(html, "text/html", null);
