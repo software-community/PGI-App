@@ -10,7 +10,7 @@
 
     <Button
         android:background="@drawable/roundbutton"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:layout_margin="@dimen/button_margins"
         android:id="@+id/what_and_prevention"
         android:text="@string/what_and_prevention"
@@ -19,7 +19,7 @@
 
     <Button
         android:background="@drawable/roundbutton"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:layout_margin="@dimen/button_margins"
         android:id="@+id/back_care"
         android:text="@string/back_care"
@@ -28,7 +28,7 @@
 
     <Button
         android:background="@drawable/roundbutton"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:layout_margin="@dimen/button_margins"
         android:id="@+id/degree_oblique_position"
         android:text="@string/degree_oblique_position"
@@ -37,7 +37,7 @@
 
     <Button
         android:background="@drawable/roundbutton"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:layout_margin="@dimen/button_margins"
         android:id="@+id/bedsore_dressing"
         android:text="@string/bedsore_dressing"
@@ -46,7 +46,7 @@
 
     <Button
         android:background="@drawable/roundbutton"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:layout_margin="@dimen/button_margins"
         android:id="@+id/sterile_articles_bedsore_dressing"
         android:text="@string/sterile_articles_bedsore_dressing"
@@ -55,7 +55,7 @@
 
     <Button
         android:background="@drawable/roundbutton"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:layout_margin="@dimen/button_margins"
         android:id="@+id/back"
         android:text="@string/back"
