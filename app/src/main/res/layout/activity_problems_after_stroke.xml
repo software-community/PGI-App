@@ -54,6 +54,17 @@
             />
 
         <Button
+            android:id="@+id/problem_fever"
+            android:text="@string/problem_fever"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            />
+
+        <Button
             android:id="@+id/problem_bad_mouth_odor"
             android:text="@string/problem_bad_mouth_odor"
             android:background="@drawable/roundbutton"
@@ -86,27 +97,7 @@
             android:layout_marginTop="20dip"
             />
 
-        <Button
-            android:id="@+id/problem_limb_spasticity"
-            android:text="@string/problem_limb_spasticity"
-            android:background="@drawable/roundbutton"
-            android:textColor="@color/colorAccent"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dip"
-            />
 
-        <Button
-            android:id="@+id/problem_fever"
-            android:text="@string/problem_fever"
-            android:background="@drawable/roundbutton"
-            android:textColor="@color/colorAccent"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dip"
-            />
 
         <Button
             android:id="@+id/problem_other"

@@ -35,7 +35,7 @@ import java.util.Date;
 public class ProblemBedsoreActivity extends AppCompatActivity {
 
     private Button pickImageBedsorePatient, submitBedsoreInfo, bedsoreBack;
-    private EditText bedsoreDurationInDays;
+    private EditText bedsoreDurationInDays , bedsoreDegree;
     private ImageView imageBedsorePatient;
     private FirebaseAuth auth;
     private DatabaseReference databaseBedSore ;
@@ -57,6 +57,7 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
         databaseBedSore = FirebaseDatabase.getInstance().getReference("bedsore");
 
         bedsoreDurationInDays = findViewById(R.id.bedsore_duration_in_days);
+        bedsoreDegree = findViewById(R.id.bedsore_degree);
         mStorageRef = FirebaseStorage.getInstance().getReference();
         bedsoreBack.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -25,7 +25,7 @@ public class ProblemsAfterStrokeActivity extends AppCompatActivity {
         problemBadMouthOdor = findViewById(R.id.problem_bad_mouth_odor);
         problemShoulderPain = findViewById(R.id.problem_shoulder_pain);
         problemLinkWeekness = findViewById(R.id.problem_link_weekness);
-        problemLimbSpasticity = findViewById(R.id.problem_limb_spasticity);
+
         problemFever = findViewById(R.id.problem_fever);
         problemOther = findViewById(R.id.problem_other);
         problemBack = findViewById(R.id.problem_back);
@@ -72,12 +72,7 @@ public class ProblemsAfterStrokeActivity extends AppCompatActivity {
             }
         });
 
-        problemLimbSpasticity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ProblemsAfterStrokeActivity.this, ProblemLimbSpasticityActivity.class));
-            }
-        });
+
 
         problemFever.setOnClickListener(new View.OnClickListener() {
             @Override

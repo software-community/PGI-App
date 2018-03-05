@@ -16,7 +16,7 @@
         android:textColor="@color/white"/>
 
     <android.support.design.widget.TextInputLayout
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:theme="@style/Theme.App.Base">
@@ -24,7 +24,7 @@
     <EditText
         android:id="@+id/ohp_one"
         android:inputType="text"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textColorHighlight="@color/orange"
@@ -33,18 +33,20 @@
 
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
-        android:layout_width="100dp"
+
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.App.Base"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="right"
         >
 
     <EditText
         android:id="@+id/ohp_two"
         android:inputType="text"
-        android:layout_width="150dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:layout_gravity="right"
         android:textColorHighlight="@color/orange"
         android:backgroundTint="@color/orange"/>
     </android.support.design.widget.TextInputLayout>
