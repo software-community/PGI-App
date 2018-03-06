@@ -86,11 +86,11 @@ public class ProblemFeverActivity extends AppCompatActivity {
                         startActivity(new Intent(ProblemFeverActivity.this, ProblemsAfterStrokeActivity.class));
                     }
                     else {
-                        Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext() , R.string.fill_details , Toast.LENGTH_LONG).show();
                     }
 
                 else {
-                    Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext() , R.string.fill_details , Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -106,7 +106,7 @@ public class ProblemFeverActivity extends AppCompatActivity {
         ProblemFeverModel entry = new ProblemFeverModel(id,userEmail,feverDays,temperature,medicine) ;
         databaseFever.child(id).setValue(entry);
 
-        Toast.makeText(this , "Limb Spasticity entry added" , Toast.LENGTH_LONG).show();
+        Toast.makeText(this , "entry added" , Toast.LENGTH_LONG).show();
 
 
 

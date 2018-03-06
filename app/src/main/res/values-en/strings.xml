@@ -24,6 +24,9 @@
     <string name="back">Back</string>
     <string name="pick_image">Upload Image</string>
     <string name="pick_video">Pick Video</string>
+    <string name="problem"> Problems </string>
+    <string name="duration">Duration (In days)</string>
+    <string name="specify_full_detail">Please fill the details completely (Along with problem specify duration also)</string>
     <string name="feeding_tube_duration_in_days">Duration of feeding tube in days</string>
     <string name="degree_of_bedsore">Degree of bedsore </string>
     <string name="upload_image_bedsore">Please upload a real picture of bedsore</string>
@@ -77,6 +80,14 @@
     <string name="other_problems_no_of_days">Duration of these problems in days</string>
 
 
+    <string name="select_image">Select an Image</string>
+    <string name="specify_bedsore_detail">Please fill the bedsore details</string>
+    <string name="file_not_found">File not found</string>
+    <string name="select_file">Please select file to upload</string>
+    <string name="select_bedsore_day">Please fill the bedsore days</string>
+    <string name="fill_mouth_odour_day">Please fill the mouth odor days</string>
+    <string name="fill_details">Please fill the details</string>
+    <string name="fill_shoulder_pain">Please fill the shoulder pain days</string>
 
     <string name="form_username">Username</string>
     <string name="form_phone_no">Phone No.</string>

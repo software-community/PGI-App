@@ -84,8 +84,8 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
         submitBedsoreInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (TextUtils.isEmpty(bedsoreDurationInDays.getText().toString().trim())){
-                    Toast.makeText(getApplicationContext() , "Please fill the bedsore days" , Toast.LENGTH_LONG).show();
+                if (TextUtils.isEmpty(bedsoreDurationInDays.getText().toString().trim()) || TextUtils.isEmpty(bedsoreDegree.getText().toString().trim()) ){
+                    Toast.makeText(getApplicationContext() , R.string.specify_bedsore_detail, Toast.LENGTH_LONG).show();
                 }
                 else {
                     uploadFile();
@@ -155,7 +155,7 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
 
 
         }else {
-            Toast.makeText(this,"File not found", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.file_not_found, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -163,20 +163,20 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
     }
     public void submitInfo(String uploadedFilePath){
         int bedsoreDays = Integer.parseInt(bedsoreDurationInDays.getText().toString().trim());
-
+        String bedsoreDegrees = bedsoreDegree.getText().toString().trim() ;
         if (!TextUtils.isEmpty(uploadedFilePath) && !TextUtils.isEmpty(bedsoreDurationInDays.getText().toString().trim())){
             String id = databaseBedSore.push().getKey();
-            ProblemBedsoreModel user = new ProblemBedsoreModel(id,userEmail,bedsoreDays,uploadedFilePath) ;
+            ProblemBedsoreModel user = new ProblemBedsoreModel(id,userEmail,bedsoreDays,uploadedFilePath,bedsoreDegrees) ;
             databaseBedSore.child(id).setValue(user);
 
             Toast.makeText(this , "Bedsore added" , Toast.LENGTH_LONG).show();
         }
         else {
             if (TextUtils.isEmpty(bedsoreDurationInDays.getText().toString().trim())){
-                Toast.makeText(this , "Please fill the bedsore days" , Toast.LENGTH_LONG).show();
+                Toast.makeText(this , R.string.select_bedsore_day , Toast.LENGTH_LONG).show();
             }
             else if (TextUtils.isEmpty(uploadedFilePath)){
-                Toast.makeText(this , "Please select file to upload" , Toast.LENGTH_LONG).show();
+                Toast.makeText(this , R.string.select_file , Toast.LENGTH_LONG).show();
             }
             else {
                 Toast.makeText(this , "Unexpected Error happen" , Toast.LENGTH_LONG).show();

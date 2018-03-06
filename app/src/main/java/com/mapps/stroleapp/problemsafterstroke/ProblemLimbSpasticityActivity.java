@@ -71,7 +71,7 @@ public class ProblemLimbSpasticityActivity extends AppCompatActivity {
                     submitInfo();
                     startActivity(new Intent(ProblemLimbSpasticityActivity.this, ProblemsAfterStrokeActivity.class));}
                 else {
-                    Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext() , R.string.fill_details , Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -85,7 +85,7 @@ public class ProblemLimbSpasticityActivity extends AppCompatActivity {
         ProblemLimbSpasticityModel entry = new ProblemLimbSpasticityModel(id,userEmail,spasticity,limbSpasticityDays,bodyPartName) ;
         databaseLimbSpasticity.child(id).setValue(entry);
 
-        Toast.makeText(this , "Limb Spasticity entry added" , Toast.LENGTH_LONG).show();
+        Toast.makeText(this , "entry added" , Toast.LENGTH_LONG).show();
 
 
 

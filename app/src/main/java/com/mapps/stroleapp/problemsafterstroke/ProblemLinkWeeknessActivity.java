@@ -70,7 +70,7 @@ public class ProblemLinkWeeknessActivity extends AppCompatActivity {
                     startActivity(new Intent(ProblemLinkWeeknessActivity.this, ProblemsAfterStrokeActivity.class));
                 }
                 else {
-                    Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext() , R.string.fill_details , Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -85,11 +85,11 @@ public class ProblemLinkWeeknessActivity extends AppCompatActivity {
             ProblemLinkWeeknessModel entry = new ProblemLinkWeeknessModel(id,userEmail,weekness,limbWeeknessDays) ;
             databaseLimbWeekness.child(id).setValue(entry);
 
-            Toast.makeText(this , "Limb Weekness entry added" , Toast.LENGTH_LONG).show();
+            Toast.makeText(this , "entry added" , Toast.LENGTH_LONG).show();
         }
         else {
             if (TextUtils.isEmpty(limbs_weekness_duration_in_days.getText().toString().trim())){
-                Toast.makeText(this , "Please fill the Limb Weekness entry" , Toast.LENGTH_LONG).show();
+                Toast.makeText(this , R.string.fill_details , Toast.LENGTH_LONG).show();
             }
             else {
                 Toast.makeText(this , "Unexpected Error happen" , Toast.LENGTH_LONG).show();

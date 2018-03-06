@@ -6,6 +6,7 @@ package com.mapps.stroleapp.problemsafterstroke;
 
 public class ProblemBedsoreModel {
     private String id ;
+    private String degree;
 
     public String getEmail() {
         return email;
@@ -28,6 +29,14 @@ public class ProblemBedsoreModel {
     private int day ;
     private String path ;
 
+    public String getDegree() {
+        return degree;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
     public int getDay() {
         return day;
     }
@@ -47,11 +56,12 @@ public class ProblemBedsoreModel {
 
     }
 
-    public ProblemBedsoreModel(String id ,String email,int day, String path ) {
+    public ProblemBedsoreModel(String id ,String email,int day, String path , String degree ) {
         this.email = email ;
         this.id = id ;
         this.day = day;
         this.path = path;
+        this.degree = degree ;
     }
 
 

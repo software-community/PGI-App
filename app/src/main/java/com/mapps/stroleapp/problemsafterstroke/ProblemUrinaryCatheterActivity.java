@@ -68,7 +68,7 @@ public class ProblemUrinaryCatheterActivity extends AppCompatActivity {
                     startActivity(new Intent(ProblemUrinaryCatheterActivity.this, ProblemsAfterStrokeActivity.class));
                 }
                 else {
-                    Toast.makeText(getApplicationContext() , "Please fill the details" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext() , R.string.fill_details , Toast.LENGTH_LONG).show();
                 }
             }
         });
