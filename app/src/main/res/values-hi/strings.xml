@@ -23,6 +23,7 @@
     <string name="submit">जमा करें</string>
     <string name="back">पीछे जाएँ</string>
     <string name="pick_image">फ़ोटो चुनें</string>
+    <string name="click_image">फ़ोटो खींचें</string>
     <string name="pick_video">वीडियो चुनें</string>
     <string name="problem"> समस्या </string>
     <string name="duration">अवधि  (दिन में)</string>
@@ -143,6 +144,28 @@
     <string name="url_pyschologySupport">https://www.youtube.com/embed/MCrSn9LiQE4</string>
     <string name="url_handWashing">https://www.youtube.com/embed/tBFBGZvBoMo</string>
     <string name="url_handWashinghandRub">https://www.youtube.com/embed/qb8D3YRkUlM</string>
+
+
+
+    <string name="dos">ये करें:</string>
+    <string name="dont">ये न करें :</string>
+    <string name="do_instructions">1. बताई हुई दवाइयों को कहे समय अनुसार ही खाएं\n
+2. बताई हुई मात्रा के अनुसार ही दवाई खाएं\n
+3. यात्रा करतें वक्त अपनी दवाइयां अपने साथ रखें\n
+4. दवाई खाने से पहले अपने हाथ अच्छी तरह से साबुन-पानी या हैण्ड रब से धोलें\n
+5. दवाइयों को ठंडी, सूखी और अंधरे वाली जगह पर रखें\n
+6. अगर कोई दष्प्ुरभाव नजर आयें तो तुरंत डॉक्टर से संपकक करें\n
+7. अपनी सेहत के बारे में अपने डॉक्टर को समय समय पर सचूित करते रहें\n
+8. दवाइयों को छोटें बच्िों और पालतूजानवरों की पहुुँि से दरू रखें\n
+9. अगर दवाई खाने के तुरंत बाद उल्टी हो जाएुँ तो 30 ममनट के बाद दबुारा दवाई दे\n
+10. दवाइयां जजस पैके ट में दी गयी है, उसी में संभाल कर रखें\n
+11. अगर आप अपनी मजी से दसू री दवाई ले रहें हैंतो अपने डॉक्टर को बताएं\n</string>
+
+    <string name="dont_instructions">1. दवाइयों की मात्रा अपने आप न बदलें\n
+2. जब लक्षण न ददखें तो दवाई लेना बंद न करें\n
+3. दवाई लेना भूलने पर डबल मात्रा कभी भी न लें\n
+4. अपनी मजी से दसू री दवाई कभी भी न लें\n
+5. दवाई को लेना कभी न भूलें\n</string>
 
 
 

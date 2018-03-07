@@ -23,6 +23,7 @@
     <string name="submit">Submit</string>
     <string name="back">Back</string>
     <string name="pick_image">Upload Image</string>
+    <string name="click_image">Click Image</string>
     <string name="pick_video">Pick Video</string>
     <string name="problem"> Problems </string>
     <string name="duration">Duration (In days)</string>
@@ -57,9 +58,8 @@
     <string name="medications_advice">Advise for medications:Do’s:Don’ts:</string>
     <string name="medication_advice">fghg</string>
     <string name="video_feedback_message">Most important: Kindly post here feed back video of the procedure you are performing on your patient e.g. limb exercises so that we can guide you if you are doing any wrong in this procedure</string>
-    <string name="schedule_instructions"><ul><li><b>Kindly</b> visit room no. 3112 at 3rd floor Neurology OPD (New OPD Block).</li><li>Patient follow up will be fixed at 1/b 3 months .
-        </li> <li>Mobile SMS/ Whats-app messages/E-mails will be sent to the patients as well as caregivers regarding follow ups.You can also contact on Stroke Helpline-
-7087009500</li></ul></string>
+    <string name="schedule_instructions">Kindly visit room no. 3112 at 3rd floor Neurology OPD (New OPD Block).Patient follow up will be fixed at 1/b 3 months .Mobile SMS/ Whats-app messages/E-mails will be sent to the patients as well as caregivers regarding follow ups.You can also contact on Stroke Helpline-
+7087009500</string>
     <string name="pick_time">Pick Date</string>
     <string name="bad_mouth_odor_duration_in_days">Duration of bad odour in the patient\'s mouth (in days)</string>
     <string name="shoulder_pain_duration_in_days">Duration of shoulder pain in days</string>
@@ -138,4 +138,29 @@
     <string name="url_pyschologySupport">https://www.youtube.com/embed/Ra7Ilr-g7ng</string>
     <string name="url_handWashing">https://www.youtube.com/embed/XmmA6wMHSZ4</string>
     <string name="url_handWashinghandRub">https://www.youtube.com/embed/MYrfMTsy_Es</string>
+
+
+    <string name="dos">Do\'s :</string>
+    <string name="dont">Don\'ts :</string>
+
+    <string name="do_instructions">  1.Take prescribed medicines at prescribed time.\n
+2. Take only prescribed dose.\n
+3. Keep your medications with you while travelling.\n
+4. Wash your hands with soap and water or with hand rub before taking medicines.\n
+5. Keep medications in a cool, dry and dark place (avoid direct sun light).\n
+6. Notify the concerned doctor if any side effect occurs.\n
+7. Keep your healthcare provider up to-date about your current health status.\n
+8. Keep medications out of the reach of children and pets.\n
+9. In case of vomiting, if it occurs immediately after taking oral medication, repeat the
+dose after 20-30 minutes.\n
+10. Keep your medications in the same container in which they were dispensed.\n
+11. If you are taking any (OTC) drug, then inform your doctor.\n
+    </string>
+
+    <string name="dont_instructions">1. Do not alter the medication dose without consulting the concerned doctor.\n
+2. Don’t discontinue the medication when symptoms disappear.\n
+3. Don’t take double dose if you miss the dose.\n
+4. Don’t take over the counter (OTC) drugs.\n
+5. Don’t forget to take the medications.\n
+    </string>
 </resources>
