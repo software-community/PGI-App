@@ -25,6 +25,7 @@
     <string name="pick_image">Upload Image</string>
     <string name="click_image">Click Image</string>
     <string name="pick_video">Pick Video</string>
+    <string name="pick_date">Pick Date</string>
     <string name="problem"> Problems </string>
     <string name="duration">Duration (In days)</string>
     <string name="specify_full_detail">Please fill the details completely (Along with problem specify duration also)</string>

@@ -45,7 +45,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/roundbutton"
         android:textColor="@color/colorAccent"
-        android:text="Pick date"
+        android:text="@string/pick_date"
         android:onClick="onClick"
         android:layout_width="wrap_content"
         android:layout_margin="10dp"

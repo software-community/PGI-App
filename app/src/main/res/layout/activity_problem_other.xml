@@ -27,7 +27,7 @@
 
         <TextView
 
-            android:text="Problems"
+            android:text="@string/problem"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -37,7 +37,7 @@
 
 
         <TextView
-            android:text="Duration (In days)"
+            android:text="@string/duration"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"

@@ -25,6 +25,7 @@
     <string name="pick_image">फ़ोटो चुनें</string>
     <string name="click_image">फ़ोटो खींचें</string>
     <string name="pick_video">वीडियो चुनें</string>
+    <string name="pick_date">तारीख चुनें</string>
     <string name="problem"> समस्या </string>
     <string name="duration">अवधि  (दिन में)</string>
     <string name="specify_full_detail">कृपया पूरी तरह से विवरण भरें (समस्या के साथ-साथ अवधि निर्दिष्ट करें)</string>

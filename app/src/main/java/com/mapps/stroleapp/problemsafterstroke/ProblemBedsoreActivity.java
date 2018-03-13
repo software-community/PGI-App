@@ -86,7 +86,7 @@ public class ProblemBedsoreActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         userEmail= user.getEmail();
-        Toast.makeText(this, user.getEmail(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, user.getEmail(), Toast.LENGTH_SHORT).show();
 
         pickImageBedsorePatient.setOnClickListener(new View.OnClickListener() {
             @Override
