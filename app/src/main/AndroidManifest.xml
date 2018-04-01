@@ -21,6 +21,11 @@
         </activity>
         <activity android:name=".LanguageActivity"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
 
         </activity>
@@ -65,11 +70,6 @@
         <activity android:name=".careathome.DosAndDontsActivity" />
         <activity android:name=".registration.ResetPasswordActivity" />
         <activity android:name=".registration.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity android:name=".whatisstroke.WhatIsStrokeVideoActivity"
