@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:scrollbars="vertical"
     android:layout_gravity="center"
+    android:background="@color/color_dark"
     tools:context="com.mapps.stroleapp.Acknowledgements">
 
     <TextView
@@ -12,6 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
+        android:background="@color/color_dark"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
         android:gravity = "center"
         android:text="@string/acknowledgements" />
 
