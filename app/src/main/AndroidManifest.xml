@@ -20,8 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".registration.SplashScreen"
             android:label="@string/app_name"
@@ -146,6 +144,15 @@
         <activity android:name=".whatisstroke.Acknowledgement" />
         <activity android:name=".activity_launcher" />
         <activity android:name=".whatisstroke.PhoneAuthActivity" />
+        <activity
+            android:name=".Acknowledgements"
+            android:label="@string/title_activity_acknowledgements">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
