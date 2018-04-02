@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:layout_gravity="center"
+    android:gravity="center"
     android:background="@color/color_dark"
     tools:context="com.mapps.stroleapp.HomeActivity">
 
@@ -14,8 +16,9 @@
         android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="@dimen/activity_horizontal_margin">
 

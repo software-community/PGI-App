@@ -46,8 +46,9 @@
             android:layout_gravity="center_horizontal"
             android:padding="3dp"
             android:src="@drawable/textgram_1518451132"
-            android:background="@drawable/image_view_border"
-            />
+            android:background="@drawable/image_view_border"/>
+
+
 
         </LinearLayout>
 
@@ -70,7 +71,6 @@
             android:layout_gravity="center_horizontal"
             android:padding="3dp"
             android:src="@drawable/textgram_1518451166"
-
             android:background="@drawable/image_view_border"
             />
         </LinearLayout>

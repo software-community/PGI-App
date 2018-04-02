@@ -23,7 +23,7 @@
         android:inputType="number"
         android:textColorHighlight="@color/orange"
         android:backgroundTint="@color/orange"
-        android:textColor="@color/orange"
+        android:textColor="@color/white"
         android:textCursorDrawable="@null"
         android:textAlignment="center"
         android:layout_margin="10dp"
@@ -38,12 +38,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+
+
     <Button
-        android:id="@+id/pick_time"
+        android:id="@+id/pick_date"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/roundbutton"
         android:textColor="@color/colorAccent"
-        android:text="Pick date"
+        android:text="@string/pick_date"
         android:onClick="onClick"
         android:layout_width="wrap_content"
         android:layout_margin="10dp"
@@ -59,8 +61,10 @@
         android:background="@drawable/roundbutton"
         android:textColor="@color/colorAccent"
         android:layout_height="wrap_content" />
+
     <Button
-        android:id="@+id/feeding_tube_back"
+
+        android:id="@+id/back"
         android:background="@drawable/roundbutton"
         android:textColor="@color/colorAccent"
         android:text="@string/back"

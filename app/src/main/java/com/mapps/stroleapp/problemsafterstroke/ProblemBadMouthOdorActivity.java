@@ -45,10 +45,11 @@ public class ProblemBadMouthOdorActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!TextUtils.isEmpty(days_mouth_odor.getText().toString().trim()))
+                if (!TextUtils.isEmpty(days_mouth_odor.getText().toString().trim())){
                     submitInfo();
+                    startActivity(new Intent(ProblemBadMouthOdorActivity.this, ProblemsAfterStrokeActivity.class));}
                 else {
-                    Toast.makeText(getApplicationContext() , "Please fill the mouth odor days" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext() , R.string.fill_mouth_odour_day, Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -66,7 +67,7 @@ public class ProblemBadMouthOdorActivity extends AppCompatActivity {
         }
         else {
             if (TextUtils.isEmpty(days_mouth_odor.getText().toString().trim())){
-                Toast.makeText(this , "Please fill the mouth odor days" , Toast.LENGTH_LONG).show();
+                Toast.makeText(this , R.string.fill_mouth_odour_day , Toast.LENGTH_LONG).show();
             }
             else {
                 Toast.makeText(this , "Unexpected Error happen" , Toast.LENGTH_LONG).show();

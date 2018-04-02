@@ -22,10 +22,16 @@
     <string name="bedsore_duration_in_days">Bedsore duration in days</string>
     <string name="submit">Submit</string>
     <string name="back">Back</string>
-    <string name="pick_image">Pick Image</string>
+    <string name="pick_image">Upload Image</string>
+    <string name="click_image">Click Image</string>
     <string name="pick_video">Pick Video</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="problem"> Problems </string>
+    <string name="duration">Duration (In days)</string>
+    <string name="specify_full_detail">Please fill the details completely (Along with problem specify duration also)</string>
     <string name="feeding_tube_duration_in_days">Duration of feeding tube in days</string>
-    <string name="degree_of_bedsore">Degree of bedsore (please send the real picture of bedsore)</string>
+    <string name="degree_of_bedsore">Degree of bedsore </string>
+    <string name="upload_image_bedsore">Please upload a real picture of bedsore</string>
     <string name="feeding_tube_last_changed">When it was last changed ?</string>
     <string name="urinary_catheter_duration_in_days">Duration of urinary (Foley\'s) catheter in days</string>
     <string name="urinary_catheter_last_changed">When it was last changed?</string>
@@ -34,6 +40,7 @@
     <string name="mouth_care">How do I care of mouth of my patient?</string>
     <string name="urinary_catheter_care">How do I care urinary catheter of my patient?</string>
     <string name="how_to_limb_exercises">How do I do limb exercises of my patient?</string>
+    <string name="psychological_support">How to provide pscyhological support to the patient?</string>
     <string name="dos_and_donts">Important Do’s and Don’ts</string>
     <string name="back_care">How to provide back–care to my patient ?</string>
     <string name="degree_oblique_position">How to provide 30 degree oblique position to my patient ?</string>
@@ -50,10 +57,10 @@
     <string name="hw_hand_rub">Hand washing with hand rub</string>
     <string name="medicine_name">Enter medicine name</string>
     <string name="medications_advice">Advise for medications:Do’s:Don’ts:</string>
+    <string name="medication_advice">fghg</string>
     <string name="video_feedback_message">Most important: Kindly post here feed back video of the procedure you are performing on your patient e.g. limb exercises so that we can guide you if you are doing any wrong in this procedure</string>
-    <string name="schedule_instructions"><ul><li><b>Kindly</b> visit room no. 3112 at 3rd floor Neurology OPD (New OPD Block).</li><li>Patient follow up will be fixed at 1/b 3 months .
-        </li> <li>Mobile SMS/ Whats-app messages/E-mails will be sent to the patients as well as caregivers regarding follow ups</li></ul></string>
-
+    <string name="schedule_instructions">Kindly visit room no. 3112 at 3rd floor Neurology OPD (New OPD Block).Patient follow up will be fixed at 1/b 3 months .Mobile SMS/ Whats-app messages/E-mails will be sent to the patients as well as caregivers regarding follow ups.You can also contact on Stroke Helpline-
+7087009500</string>
     <string name="pick_time">Pick Date</string>
     <string name="bad_mouth_odor_duration_in_days">Duration of bad odour in the patient\'s mouth (in days)</string>
     <string name="shoulder_pain_duration_in_days">Duration of shoulder pain in days</string>
@@ -74,6 +81,14 @@
     <string name="other_problems_no_of_days">Duration of these problems in days</string>
 
 
+    <string name="select_image">Select an Image</string>
+    <string name="specify_bedsore_detail">Please fill the bedsore details</string>
+    <string name="file_not_found">File not found</string>
+    <string name="select_file">Please select file to upload</string>
+    <string name="select_bedsore_day">Please fill the bedsore days</string>
+    <string name="fill_mouth_odour_day">Please fill the mouth odor days</string>
+    <string name="fill_details">Please fill the details</string>
+    <string name="fill_shoulder_pain">Please fill the shoulder pain days</string>
 
     <string name="form_username">Username</string>
     <string name="form_phone_no">Phone No.</string>
@@ -107,4 +122,46 @@
     <string name="btn_sign_out">Sign Out</string>
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="url_whatIsStroke">https://www.youtube.com/embed/-Oqy9Aj5FRY </string>
+    <string name="url_whatIsBedSore">https://www.youtube.com/embed/cME_Tw5HfaQ</string>
+    <string name="url_backCare">https://www.youtube.com/embed/xVDmCIOBsx4</string>
+    <string name="url_obliquePosition">https://www.youtube.com/embed/tvwsWj3UpLI</string>
+    <string name="url_bedsoreDressing">https://www.youtube.com/embed/7rwVFJLHFSA</string>
+    <string name="url_sterileArticles">https://www.youtube.com/embed/-x5IfvdFAok</string>
+    <string name="url_feedPatient">https://www.youtube.com/embed/KA1fldPRWKY</string>
+    <string name="url_careMouth">https://www.youtube.com/embed/sZxM3KcaGkY</string>
+    <string name = "url_urinaryCatheter">https://www.youtube.com/embed/NMjW9h-bE2M</string>
+    <string name="url_upperLimbs">https://www.youtube.com/embed/tLI3ypC7I7k</string>
+    <string name="url_lowerLimbs">https://www.youtube.com/embed/FlvCAOjeRuM</string>
+    <string name="url_selfUpperLimbs">https://www.youtube.com/embed/neMufk7jFDM</string>
+    <string name="url_activeUpperLimbs">https://www.youtube.com/embed/GcC6TCysJhc</string>
+    <string name="url_hipExercise">https://www.youtube.com/embed/Dx-4yZk-0JY</string>
+    <string name="url_pyschologySupport">https://www.youtube.com/embed/Ra7Ilr-g7ng</string>
+    <string name="url_handWashing">https://www.youtube.com/embed/XmmA6wMHSZ4</string>
+    <string name="url_handWashinghandRub">https://www.youtube.com/embed/MYrfMTsy_Es</string>
+
+
+    <string name="dos">Do\'s :</string>
+    <string name="dont">Don\'ts :</string>
+
+    <string name="do_instructions">  1.Take prescribed medicines at prescribed time.\n
+2. Take only prescribed dose.\n
+3. Keep your medications with you while travelling.\n
+4. Wash your hands with soap and water or with hand rub before taking medicines.\n
+5. Keep medications in a cool, dry and dark place (avoid direct sun light).\n
+6. Notify the concerned doctor if any side effect occurs.\n
+7. Keep your healthcare provider up to-date about your current health status.\n
+8. Keep medications out of the reach of children and pets.\n
+9. In case of vomiting, if it occurs immediately after taking oral medication, repeat the
+dose after 20-30 minutes.\n
+10. Keep your medications in the same container in which they were dispensed.\n
+11. If you are taking any (OTC) drug, then inform your doctor.\n
+    </string>
+
+    <string name="dont_instructions">1. Do not alter the medication dose without consulting the concerned doctor.\n
+2. Don’t discontinue the medication when symptoms disappear.\n
+3. Don’t take double dose if you miss the dose.\n
+4. Don’t take over the counter (OTC) drugs.\n
+5. Don’t forget to take the medications.\n
+    </string>
 </resources>

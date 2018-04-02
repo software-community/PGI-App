@@ -2,14 +2,17 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:fillViewport="true"
+    android:layout_gravity="center"
     android:background="@color/color_dark"
     tools:context="com.mapps.stroleapp.feedback.FeedbackActivity">
 
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_height="wrap_content">
 
         <EditText
@@ -86,6 +89,7 @@
             android:textColor="@color/colorAccent"
             android:layout_below="@id/video_feedback"
             android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

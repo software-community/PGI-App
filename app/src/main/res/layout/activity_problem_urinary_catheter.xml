@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.mapps.stroleapp.problemsafterstroke.ProblemBedsoreActivity"
-    android:background="@color/color_dark">
+    android:background="@color/color_dark"
+    android:gravity="center">
 
     <TextView
         android:text="@string/urinary_catheter_duration_in_days"
@@ -19,29 +20,36 @@
         android:id="@+id/urinary_catheter_duration_in_days"
         android:layout_gravity="center_horizontal"
         android:inputType="number"
-        android:textColorHighlight="@color/white"
+        android:textColorHighlight="@color/orange"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/orange"
+        android:textCursorDrawable="@null"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"/>
+        />
 
     <TextView
         android:text="@string/urinary_catheter_last_changed"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+
+
 
 
 
 
 
     <Button
-        android:id="@+id/pick_time_ftlc"
+        android:id="@+id/pick_date"
         android:layout_gravity="center_horizontal"
         android:text="@string/pick_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbutton"
+        android:layout_margin="10dp"
         android:onClick="onClick"
         android:textColor="@color/colorAccent"/>
 
@@ -52,16 +60,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbutton"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/urinary_catheter_back"
+        android:id="@+id/back"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbutton"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorAccent"
+        android:layout_margin="10dp"/>
 
 
 

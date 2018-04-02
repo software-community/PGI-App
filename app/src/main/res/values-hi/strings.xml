@@ -23,9 +23,16 @@
     <string name="submit">जमा करें</string>
     <string name="back">पीछे जाएँ</string>
     <string name="pick_image">फ़ोटो चुनें</string>
+    <string name="click_image">फ़ोटो खींचें</string>
     <string name="pick_video">वीडियो चुनें</string>
+    <string name="pick_date">तारीख चुनें</string>
+    <string name="problem"> समस्या </string>
+    <string name="duration">अवधि  (दिन में)</string>
+    <string name="specify_full_detail">कृपया पूरी तरह से विवरण भरें (समस्या के साथ-साथ अवधि निर्दिष्ट करें)</string>
+
     <string name="feeding_tube_duration_in_days">नाक की नली कितने दिनों से लगी है ?</string>
-    <string name="degree_of_bedsore">बेडसोर की अवस्था (कृपया बेडसोर की फोटो खींच कर भेजें)</string>
+    <string name="degree_of_bedsore"> बेडसोर की अवस्था </string>
+    <string name="upload_image_bedsore">कृपया बेडसोर की फोटो खींच कर भेजें</string>
     <string name="feeding_tube_last_changed">नली कब बदली है ?</string>
     <string name="urinary_catheter_duration_in_days">पेशाब की नली कितने दिनों से लगी है ?</string>
     <string name="urinary_catheter_last_changed">नली कब बदली है ?</string>
@@ -35,7 +42,7 @@
     <string name="medicine_name">दवा का नाम लिखें</string>
     <string name="urinary_catheter_care">मरीज के पेशाब की नली की देखभाल कैसे करें ?</string>
     <string name="how_to_limb_exercises">मरीज के हाथ एवं पैर की कसरत या वरजिश कैसे करें ?</string>
-    <string name="psychological_support">मरीज का मनोबल कैसे बढ़ाएं ?</string>
+    <string name="psychological_support"> रोगी को मनोवैज्ञानिक सहायता कैसे प्रदान करें</string>
     <string name="dos_and_donts">महत्वपूर्ण करें / न करें</string>
     <string name="back_care">मरीज की पीठ की देखभाल कैसे करें ?</string>
     <string name="degree_oblique_position">मरीज को 30 डिग्री पोजीशन या करवट कैसे दें ?</string>
@@ -50,11 +57,13 @@
     <string name="exercise_trunk_or_hips">कूल्हों या धड़ की  कसरतें</string>
     <string name="hw_soap_and_water">साबुन और पानी से हाथ धोना</string>
     <string name="hw_hand_rub">हैण्ड-रब से हाथ धोना</string>
+    <string name="medication_advice">fghg</string>
     <string name="medications_advice">दवाई के लिए सलाह:-करें:न करें:</string>
     <string name="video_feedback_message">सबसे महत्वपूर्ण : कृपया मरीज पर दोहरातें हुए कोई भी प्रोसीजर का अपना वीडियो यहाँ डालें, अगर आप उस प्रोसीजर में कुछ भी गलत कर रहें हो तो हम उसको ठीक करवाने में आपकी मदद करेगें</string>
     <string name="schedule_instructions">कृपया मरीज को नयी ओपीडी की तीसरी मंजिल पर कमरा न. 3112 में 1 महीने तथा 3 महीने पर दिखाएँ
 
-याददास्त के लिए आपके पंजीकृत मोबाइल न. या आपके व्हाट्स-एप्प न. या आपके ई-मेल पर दो दिन पहले मैसेज भेजा जायेगा </string>
+याददास्त के लिए आपके पंजीकृत मोबाइल न. या आपके व्हाट्स-एप्प न. या आपके ई-मेल पर दो दिन पहले मैसेज भेजा जायेगा|आप स्ट्रोक हेल्पलाइन पर भी संपर्क कर सकते हैं-
+7087009500 </string>
     <string name="pick_time">समय चुनें</string>
     <string name="bad_mouth_odor_duration_in_days">मुँह से बदबू कितने दिनों से है ?</string>
     <string name="shoulder_pain_duration_in_days">कंधे में दर्द कितने दिनों से है ?</string>
@@ -73,6 +82,16 @@
     <string name="no">नहीं</string>
     <string name="other_health_problems">मरीज को और क्या समस्या है ?</string>
     <string name="other_problems_no_of_days">अगर है तो कितने दिनों से है ?</string>
+
+    <string name="select_image">एक छवि का चयन करें</string>
+    <string name="specify_bedsore_detail">कृपया बेडसोर विवरण भरें</string>
+    <string name="file_not_found">फाइल नहीं मिली</string>
+    <string name="select_file">कृपया अपलोड करने के लिए फ़ाइल का चयन करें</string>
+    <string name="select_bedsore_day">कृपया बेडसोर के दिन भरें</string>
+    <string name="fill_mouth_odour_day">मुंह गंध के दिन भरें</string>
+    <string name="fill_details">कृपया विवरण भरें</string>
+    <string name="fill_shoulder_pain">कृपया कंधे के दर्द के दिनों को भरें</string>
+
 
 
 
@@ -108,4 +127,47 @@
     <string name="btn_sign_out">साइन आउट करें</string>
     <string name="lbl_forgot_password">पासवर्ड भूल गए?</string>
     <string name="forgot_password_msg">आपको पासवर्ड रीसेट निर्देश भेजने के लिए हमें बस आपके पंजीकृत ईमेल आईडी की आवश्यकता है.</string>
+
+    <string name="url_whatIsStroke"> https://www.youtube.com/embed/ctamdBMijvQ</string>
+    <string name="url_whatIsBedSore">https://www.youtube.com/embed/Wc8pr4asR-0</string>
+    <string name="url_backCare">https://www.youtube.com/embed/2AF4xgn-IgU</string>
+    <string name="url_obliquePosition">https://www.youtube.com/embed/8LFNdKhtKPQ</string>
+    <string name="url_bedsoreDressing">https://www.youtube.com/embed/S6et3jyvWLk</string>
+    <string name="url_sterileArticles">https://www.youtube.com/embed/sEjSUX0icck</string>
+    <string name="url_feedPatient">https://www.youtube.com/embed/iUyMYN9dNiQ</string>
+    <string name="url_careMouth">https://www.youtube.com/embed/bpiqYplZkh8</string>
+    <string name = "url_urinaryCatheter">https://www.youtube.com/embed/zcfLXUoSPEc</string>
+    <string name="url_upperLimbs">https://www.youtube.com/embed/99St9Xa0Xa4</string>
+    <string name="url_lowerLimbs">https://www.youtube.com/embed/nHhP_cdjMW4</string>
+    <string name="url_selfUpperLimbs">https://www.youtube.com/embed/9JTE7LWvFgA</string>
+    <string name="url_activeUpperLimbs">https://www.youtube.com/embed/jlCvI4r0VHc</string>
+    <string name="url_hipExercise">https://www.youtube.com/embed/qo5LLeZx4o8</string>
+    <string name="url_pyschologySupport">https://www.youtube.com/embed/MCrSn9LiQE4</string>
+    <string name="url_handWashing">https://www.youtube.com/embed/tBFBGZvBoMo</string>
+    <string name="url_handWashinghandRub">https://www.youtube.com/embed/qb8D3YRkUlM</string>
+
+
+
+    <string name="dos">ये करें:</string>
+    <string name="dont">ये न करें :</string>
+    <string name="do_instructions">1. बताई हुई दवाइयों को कहे समय अनुसार ही खाएं\n
+2. बताई हुई मात्रा के अनुसार ही दवाई खाएं\n
+3. यात्रा करतें वक्त अपनी दवाइयां अपने साथ रखें\n
+4. दवाई खाने से पहले अपने हाथ अच्छी तरह से साबुन-पानी या हैण्ड रब से धोलें\n
+5. दवाइयों को ठंडी, सूखी और अंधरे वाली जगह पर रखें\n
+6. अगर कोई दष्प्ुरभाव नजर आयें तो तुरंत डॉक्टर से संपकक करें\n
+7. अपनी सेहत के बारे में अपने डॉक्टर को समय समय पर सचूित करते रहें\n
+8. दवाइयों को छोटें बच्िों और पालतूजानवरों की पहुुँि से दरू रखें\n
+9. अगर दवाई खाने के तुरंत बाद उल्टी हो जाएुँ तो 30 ममनट के बाद दबुारा दवाई दे\n
+10. दवाइयां जजस पैके ट में दी गयी है, उसी में संभाल कर रखें\n
+11. अगर आप अपनी मजी से दसू री दवाई ले रहें हैंतो अपने डॉक्टर को बताएं\n</string>
+
+    <string name="dont_instructions">1. दवाइयों की मात्रा अपने आप न बदलें\n
+2. जब लक्षण न ददखें तो दवाई लेना बंद न करें\n
+3. दवाई लेना भूलने पर डबल मात्रा कभी भी न लें\n
+4. अपनी मजी से दसू री दवाई कभी भी न लें\n
+5. दवाई को लेना कभी न भूलें\n</string>
+
+
+
 </resources>

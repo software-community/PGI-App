@@ -16,20 +16,26 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.mapps.stroleapp.R;
 
 public class ProblemHomeActivity extends AppCompatActivity {
-    private EditText other_problems_no_of_days , ohp_one , ohp_two , ohp_three ;
+    private EditText ohp_one , ohp_two , ohp_three ,ohp_one_duration ,ohp_two_duration ,ohp_three_duration ;
     private Button back , submit ;
     private DatabaseReference databaseOtherProblems ;
     private String problem1 , problem2 , problem3 ;
-    private boolean fillDetails = false ;
+    private int duration1 , duration2 , duration3 ;
+    private boolean fillDetails1 = true ;
+    private boolean fillDetails2 = true ;
+    private boolean fillDetails3 = true ;
     private String userEmail ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problem_other);
-        other_problems_no_of_days = findViewById(R.id.other_problems_no_of_days);
+
         ohp_one = findViewById(R.id.ohp_one);
         ohp_two = findViewById(R.id.ohp_two);
         ohp_three = findViewById(R.id.ohp_three);
+        ohp_one_duration = findViewById(R.id.ohp_one_duration);
+        ohp_two_duration = findViewById(R.id.ohp_two_duration);
+        ohp_three_duration = findViewById(R.id.ohp_three_duration);
         databaseOtherProblems = FirebaseDatabase.getInstance().getReference("otherproblems");
         back = findViewById(R.id.back);
         submit = findViewById(R.id.submit);
@@ -44,24 +50,56 @@ public class ProblemHomeActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!TextUtils.isEmpty(ohp_one.getText().toString().trim()) && !TextUtils.isEmpty(other_problems_no_of_days.getText().toString().trim()) ){
+                if ((TextUtils.isEmpty(ohp_one.getText().toString().trim()) && TextUtils.isEmpty(ohp_one_duration.getText().toString().trim()))){
+                    fillDetails1 = true;
+                }
+                else if (!TextUtils.isEmpty(ohp_one.getText().toString().trim()) && !TextUtils.isEmpty(ohp_one_duration.getText().toString().trim())){
                     problem1 = ohp_one.getText().toString().trim() ;
-                    fillDetails = true ;
+                    duration1 = Integer.parseInt(ohp_one_duration.getText().toString().trim());
+                    fillDetails1 = true ;
+                    }
+
+                else{
+                       fillDetails1 = false;
+                    }
+
+
+
+
+                if ((TextUtils.isEmpty(ohp_two.getText().toString().trim()) && TextUtils.isEmpty(ohp_two_duration.getText().toString().trim()))){
+                    fillDetails2 = true;
                 }
-                if (!TextUtils.isEmpty(ohp_two.getText().toString().trim())&& !TextUtils.isEmpty(other_problems_no_of_days.getText().toString().trim()) ){
+                else if (!TextUtils.isEmpty(ohp_two.getText().toString().trim()) && !TextUtils.isEmpty(ohp_two_duration.getText().toString().trim())){
                     problem2 = ohp_two.getText().toString().trim() ;
-                    fillDetails = true ;
-                }
-                if (!TextUtils.isEmpty(ohp_three.getText().toString().trim())&& !TextUtils.isEmpty(other_problems_no_of_days.getText().toString().trim()) ){
-                    problem3 = ohp_three.getText().toString().trim() ;
-                    fillDetails = true ;
+                    duration2 = Integer.parseInt(ohp_two_duration.getText().toString().trim());
+                    fillDetails2 = true ;
                 }
 
-                if (fillDetails){
-                    submitInfo();
+                else{
+                    fillDetails2 = false;
                 }
+
+
+
+                if ((TextUtils.isEmpty(ohp_three.getText().toString().trim()) && TextUtils.isEmpty(ohp_three_duration.getText().toString().trim()))){
+                    fillDetails3 = true;
+                }
+                else if (!TextUtils.isEmpty(ohp_three.getText().toString().trim()) && !TextUtils.isEmpty(ohp_three_duration.getText().toString().trim())){
+                    problem3 = ohp_three.getText().toString().trim() ;
+                    duration3 = Integer.parseInt(ohp_three_duration.getText().toString().trim());
+                    fillDetails3 = true ;
+                }
+
+                else{
+                    fillDetails3 = false;
+                }
+
+                if (!fillDetails1 || !fillDetails2 || !fillDetails3){
+                    Toast.makeText(getApplicationContext() ,R.string.specify_full_detail , Toast.LENGTH_LONG).show();
+                   }
                 else {
-                    Toast.makeText(getApplicationContext() , "Please fill the details completely" , Toast.LENGTH_LONG).show();
+                    submitInfo();
+                    startActivity(new Intent(ProblemHomeActivity.this, ProblemsAfterStrokeActivity.class));
                 }
             }
         });
@@ -69,14 +107,13 @@ public class ProblemHomeActivity extends AppCompatActivity {
     }
 
     public void submitInfo(){
-        int duration = Integer.parseInt(other_problems_no_of_days.getText().toString().trim());
-      
+
         
         String id = databaseOtherProblems.push().getKey();
-        ProblemOtherProblemsModel entry = new ProblemOtherProblemsModel(id,userEmail,duration,problem1,problem2,problem3) ;
+        ProblemOtherProblemsModel entry = new ProblemOtherProblemsModel(id,userEmail,duration1 , duration2 , duration3,problem1,problem2,problem3) ;
         databaseOtherProblems.child(id).setValue(entry);
 
-        Toast.makeText(this , "Limb Spasticity entry added" , Toast.LENGTH_LONG).show();
+        Toast.makeText(this , "Problems added" , Toast.LENGTH_LONG).show();
 
 
 

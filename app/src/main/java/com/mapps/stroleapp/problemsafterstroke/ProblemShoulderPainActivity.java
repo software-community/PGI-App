@@ -45,10 +45,12 @@ public class ProblemShoulderPainActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!TextUtils.isEmpty(days_shoulder_pain.getText().toString().trim()))
+                if (!TextUtils.isEmpty(days_shoulder_pain.getText().toString().trim())){
                     submitInfo();
+                    startActivity(new Intent(ProblemShoulderPainActivity.this, ProblemsAfterStrokeActivity.class));
+                }
                 else {
-                    Toast.makeText(getApplicationContext() , "Please fill the shoulder pain days" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext() , R.string.fill_shoulder_pain , Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -66,7 +68,7 @@ public class ProblemShoulderPainActivity extends AppCompatActivity {
         }
         else {
             if (TextUtils.isEmpty(days_shoulder_pain.getText().toString().trim())){
-                Toast.makeText(this , "Please fill the Shoulder Pain entry" , Toast.LENGTH_LONG).show();
+                Toast.makeText(this , R.string.fill_shoulder_pain , Toast.LENGTH_LONG).show();
             }
             else {
                 Toast.makeText(this , "Unexpected Error happen" , Toast.LENGTH_LONG).show();

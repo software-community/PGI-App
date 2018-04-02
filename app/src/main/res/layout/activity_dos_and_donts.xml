@@ -29,13 +29,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/medications_advice"
-            android:layout_gravity="center_horizontal"
+        <Button
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="@dimen/button_margins"
+            android:id="@+id/medication_advice"
             android:text="@string/medications_advice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
     </LinearLayout>
 

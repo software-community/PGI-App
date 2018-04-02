@@ -28,7 +28,10 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.mapps.stroleapp.FeedbackData;
+import com.mapps.stroleapp.HomeActivity;
 import com.mapps.stroleapp.R;
+import com.mapps.stroleapp.problemsafterstroke.ProblemFeedingTubeActivity;
+import com.mapps.stroleapp.problemsafterstroke.ProblemsAfterStrokeActivity;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -77,6 +80,7 @@ public class FeedbackActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 uploadFeedback();
+                startActivity(new Intent(FeedbackActivity.this, HomeActivity.class));
             }
         });
 

@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context="com.mapps.stroleapp.schedule.FollowUpScheduleActivity"
+    android:background="@color/color_dark"
     >
 
 
@@ -13,9 +15,10 @@
         android:text="@string/schedule_instructions"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="20dp"
+        android:gravity="left"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:background="@drawable/button_blue"/>
+        android:textColor="@color/colorAccent"
+        android:background="@color/color_dark"/>
 
 </RelativeLayout>

@@ -37,8 +37,7 @@
             android:id="@+id/lang_hindi"
             android:text="@string/hindi"
             android:layout_width="250dp"
-
-            android:layout_marginBottom="100dp"
+            android:layout_margin="30dp"
             android:layout_height="80dp"
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/btn_txt_size_large"/>
@@ -47,10 +46,22 @@
             android:background="@drawable/roundbutton"
             android:id="@+id/lang_english"
             android:text="@string/english"
+            android:layout_margin="30dp"
             android:layout_width="250dp"
             android:layout_height="80dp"
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/btn_txt_size_large"/>
+
+        <Button
+            android:background="@drawable/roundbutton"
+            android:id="@+id/acknowledgement"
+            android:text="Acknowledgement"
+            android:layout_margin="30dp"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
 
     </LinearLayout>
 

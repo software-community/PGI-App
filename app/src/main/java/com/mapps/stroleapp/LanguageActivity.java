@@ -10,6 +10,8 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
+import com.mapps.stroleapp.whatisstroke.Acknowledgement;
+
 import java.util.Locale;
 
 public class LanguageActivity extends AppCompatActivity {
@@ -22,7 +24,7 @@ public class LanguageActivity extends AppCompatActivity {
     public static final String language = null;
 
     Locale mylocale;
-    Button langHindi, langEnglish;
+    Button langHindi, langEnglish , acknowledgement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +33,13 @@ public class LanguageActivity extends AppCompatActivity {
 
         langHindi = findViewById(R.id.lang_hindi);
         langEnglish = findViewById(R.id.lang_english);
+        acknowledgement = findViewById(R.id.acknowledgement);
 
         langHindi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 setLanguage("hi");
-                startActivity(new Intent(LanguageActivity.this, RoleActivity.class));
+                startActivity(new Intent(LanguageActivity.this, HomeActivity.class));
             }
         });
 
@@ -44,7 +47,14 @@ public class LanguageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setLanguage("en");
-                startActivity(new Intent(LanguageActivity.this, RoleActivity.class));
+                startActivity(new Intent(LanguageActivity.this, HomeActivity.class));
+            }
+        });
+
+        acknowledgement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LanguageActivity.this, Acknowledgement.class));
             }
         });
 

@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mapps.stroleapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,103 +12,140 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
-        <activity
-            android:name=".registration.SplashScreen"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait">
-
-        </activity>
-        <activity android:name=".LanguageActivity"
-            android:screenOrientation="portrait">
+        android:theme="@style/AppTheme">
+        <activity android:name=".whatisstroke.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
-        <activity android:name=".RoleActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".registration.RegisterActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".HomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemsAfterStrokeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".careathome.TakingCareHomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".feedback.FeedbackActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".schedule.FollowUpScheduleActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemBedsoreActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemFeedingTubeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemUrinaryCatheterActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemBadMouthOdorActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemShoulderPainActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemLinkWeeknessActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemLimbSpasticityActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemFeverActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".problemsafterstroke.ProblemHomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".careathome.BedsoreWhatAndPreventionHomeActivity"
+
+
+        <activity
+            android:name=".registration.SplashScreen"
+            android:label="@string/app_name"
             android:screenOrientation="portrait" />
-        <activity android:name=".careathome.LimbExercisesActivity"
+        <activity
+            android:name=".LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registration.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemsAfterStrokeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".careathome.TakingCareHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feedback.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.FollowUpScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemBedsoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemFeedingTubeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemUrinaryCatheterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemBadMouthOdorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemShoulderPainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemLinkWeeknessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemLimbSpasticityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemFeverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".problemsafterstroke.ProblemHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".careathome.BedsoreWhatAndPreventionHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".careathome.LimbExercisesActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".careathome.PassiveRangeExercisesActivity" />
         <activity android:name=".careathome.ActiveRangeExercisesActivity" />
         <activity android:name=".careathome.DosAndDontsActivity" />
         <activity android:name=".registration.ResetPasswordActivity" />
         <activity android:name=".registration.LoginActivity">
-
-        </activity>
-        <activity android:name=".whatisstroke.WhatIsStrokeVideoActivity"
-            android:label="my_player_activity"
+            </activity>
+        <activity
+            android:name=".whatisstroke.WhatIsStrokeVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:label="my_player_activity"
             android:theme="@style/PlayerAppTheme" />
-        <activity android:name=".careathome.WhatAndPreventionVideoActivity"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".careathome.BackCareVideoActivity"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".careathome.DegreeObliquePositionVideoActivity"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".careathome.BedsoreDressingVideoActivity"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".careathome.SterileArticlesBedsoreDressingVideoActivity"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".careathome.PassiveRangeLowerLimbsVideoActivity"
+        <activity
+            android:name=".careathome.WhatAndPreventionVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.PassiveRangeUpperLimbsVideoActivity"
+        <activity
+            android:name=".careathome.BackCareVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.SelfAssistedRangeUpperLimbsVideoActivity"
+        <activity
+            android:name=".careathome.DegreeObliquePositionVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.ActiveRangeUpperLimbsVideoActivity"
+        <activity
+            android:name=".careathome.BedsoreDressingVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.ExerciseTrunkOrHipsVideoActivity"
+        <activity
+            android:name=".careathome.SterileArticlesBedsoreDressingVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.HowToFeedVideoActivity"
+        <activity
+            android:name=".careathome.PassiveRangeLowerLimbsVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.MouthCareVideoActivity"
+        <activity
+            android:name=".careathome.PassiveRangeUpperLimbsVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.UrinaryCareVideoActivity"
+        <activity
+            android:name=".careathome.SelfAssistedRangeUpperLimbsVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.HwSoapAndWaterVideoActivity"
+        <activity
+            android:name=".careathome.ActiveRangeUpperLimbsVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.HwHandRubVideoActivity"
+        <activity
+            android:name=".careathome.ExerciseTrunkOrHipsVideoActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".careathome.PsychologicalSupportVideoActivity"
-            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".careathome.HowToFeedVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".careathome.MouthCareVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".careathome.UrinaryCareVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".careathome.HwSoapAndWaterVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".careathome.HwHandRubVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".careathome.PsychologicalSupportVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".careathome.MedicationAdvice" />
+        <activity android:name=".whatisstroke.Acknowledgement" />
+        <activity android:name=".activity_launcher" />
+        <activity android:name=".whatisstroke.PhoneAuthActivity" />
     </application>
 
 </manifest>
