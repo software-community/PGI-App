@@ -16,10 +16,10 @@
 
         <TextView
             android:id="@+id/acknow"
-            android:text="Acknowledgement for online references"
+            android:text="@string/acknowledgement_for_online_references"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left"
+            android:gravity="start"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_margin="20dp"
@@ -30,11 +30,10 @@
         <TextView
             android:id="@+id/references"
             android:text="@string/acknowledgement"
-            android:layout_below="@id/acknow"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left"
+            android:gravity="start"
             android:textSize="15sp"
 
             android:textColor="@color/colorAccent"

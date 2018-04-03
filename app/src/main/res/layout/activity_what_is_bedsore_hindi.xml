@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scrollbars="vertical"
+    android:background="@color/color_dark"
+    tools:context="com.mapps.stroleapp.WhatIsBedsoreHindi">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Bedsore_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/hinditext1"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:background="@color/color_dark"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageView
+            android:id="@+id/Bedsore_img1"
+            android:contentDescription="@string/bedsore_img_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bedsore_1" />
+
+        <TextView
+            android:id="@+id/Bedsore_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/hinditext2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/color_dark"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/Bedsore_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hinditext3"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:background="@color/color_dark"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageView
+            android:id="@+id/Bedsore_img2"
+            android:contentDescription="@string/bedsore_img_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bedsore_2" />
+
+        <TextView
+            android:id="@+id/Bedsore_txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/hinditext4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/color_dark"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
