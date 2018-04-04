@@ -6,6 +6,7 @@
     <string name="pgi">Stroke Services\n Department of Neurology\n PGIMER, Chandigarh</string>
     <string name="software">Managed by Software Community, IIT Ropar</string>
     <string name="association">PGIMER Chandigarh in association with IIT ROPAR</string>
+    <string name="acknowledgement_for_online_references">Acknowledgement for online references</string>
     <string name="acknowledgement">
 
         1. <a href="https://www.moranelderlaw.com/pressure-sores-in-elderly-patients/accessed on
@@ -508,4 +509,32 @@ And\n
 My Wife\n
 (Smt. Vimla)"\n
     </string>
+    
+    <string name="bedsore_img_1">चित्र 1: निचली पीठ, नितम्ब पर बैडसोर की अवस्थाएं</string>
+    <string name="bedsore_img_2">चित्र 2: अलग-2 पोजीशन या करवट में बैडसोर बनने वाली जगहें</string>
+
+    <string name="hinditext1">
+        <b>बैडसोर या बिस्तरी घाव क्या है ?</b>\n\n
+        अध्रंग केे मरीज की त्वचा पर, लम्बे समय तक बिस्तर पर पड़े रहने के कारण, घाव बन जाते हैं जिन्हे हम बैडसोर या बिस्तरी घाव कहते हैं ।
+        बैडसोर या बिस्तरी घाव मरीज़ की हड्डियों वाले हिस्से और पलंग या बिस्तर के बीच त्वचा और त्वचा के नीचे के उत्तकों पर लम्बे समय तक दबाव पड़ने के कारण बनते हैं ।\n\n\n
+
+        <b>बैडसोर के बढ़नेे की 4 अवस्थाएं होेती हैं:</b>\n\n
+        <b>पहली अवस्था:</b> इसमें त्वचा फटती नहीं है। लेकिन त्वचा में दर्द, लाली या त्वचा गर्म हो सकती है।\n
+        <b>दूसरी अवस्था:</b> इस अवस्था में त्वचा फट जाती है और घाव बन जाता है । इसमें दर्द भी हो सकता है । एक छाला या गड्ढा सा भी बन जाता है ।\n
+        <b>तीसरी अवस्था:</b> इस अवस्था में स्थिति और भी गंभीर हो जाती है । त्वचा की गहराई में घाव बन जाता है । इसमें दर्द भी हो सकता है ।\n
+        <b>चैथी अवस्था:</b> इस अवस्था में घाव बहुत गहरा हो जाता है । घाव मांस पेशियां, हड्डियों एवं जोड़ में भी फैल जाता है ।\n
+    </string>
+    <string name="hinditext2">
+        <b>चित्र 1: निचली पीठ, नितम्ब पर बैडसोर की अवस्थाएं</b>\n\n
+    </string>
+    <string name="hinditext3">
+        <b>अलग-2 पोजीशन या करवट में बैडसोर बनने वाली जगहें:</b>\n\n
+        शरीर के कुछ निश्चित भाग या जगह पर बैडसोर जल्दी से बन जाते हैं ये जगहें हैं:\n\n
+        <b>सीधा लेटने या बैठने पर:</b> सिर के पीछे, कंधे, कोहनी, निचली पीठ, नितम्ब, कूल्हा, एवं ऐड़ी ।\n\n
+        <b>एक तरफ या साईड में लेटने पर:</b> कान, कंधे, कोहनी, नितम्ब, कूल्हा, जांघ, घुटना, टांग, टखना, एवं ऐड़ी ।\n\n
+    </string>
+    <string name="hinditext4">
+        <b>चित्र 2: अलग-2 पोजीशन या करवट में बैडसोर बनने वाली जगहें</b>\n\n
+    </string>
+
 </resources>
