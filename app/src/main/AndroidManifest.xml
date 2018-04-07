@@ -30,7 +30,14 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".HomeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".problemsafterstroke.ProblemsAfterStrokeActivity"
             android:screenOrientation="portrait" />
@@ -81,7 +88,7 @@
         <activity android:name=".careathome.DosAndDontsActivity" />
         <activity android:name=".registration.ResetPasswordActivity" />
         <activity android:name=".registration.LoginActivity">
-            </activity>
+              </activity>
         <activity
             android:name=".whatisstroke.WhatIsStrokeVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
@@ -143,18 +150,10 @@
         <activity
             android:name=".Acknowledgements"
             android:label="@string/title_activity_acknowledgements">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".WhatIsBedsoreHindi">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

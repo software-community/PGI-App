@@ -25,7 +25,7 @@ public class WhatIsBedsoreHindi extends AppCompatActivity {
 
         txt1.setText(R.string.hinditext1);
 
-        img1.setImageResource(R.drawable.bedsore_1);
+       img1.setImageResource(R.drawable.bedsore_1);
 
         txt2.setText(R.string.hinditext2);
         txt3.setText(R.string.hinditext3);

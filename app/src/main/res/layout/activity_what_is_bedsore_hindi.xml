@@ -29,9 +29,9 @@
 
         <ImageView
             android:id="@+id/Bedsore_img1"
-            android:contentDescription="@string/bedsore_img_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/bedsore_img_1"
             app:srcCompat="@drawable/bedsore_1" />
 
         <TextView
@@ -59,9 +59,9 @@
 
         <ImageView
             android:id="@+id/Bedsore_img2"
-            android:contentDescription="@string/bedsore_img_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/bedsore_img_2"
             app:srcCompat="@drawable/bedsore_2" />
 
         <TextView

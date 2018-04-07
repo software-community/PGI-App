@@ -15,11 +15,12 @@ import com.mapps.stroleapp.feedback.FeedbackActivity;
 import com.mapps.stroleapp.problemsafterstroke.ProblemsAfterStrokeActivity;
 import com.mapps.stroleapp.registration.LoginActivity;
 import com.mapps.stroleapp.schedule.FollowUpScheduleActivity;
+import com.mapps.stroleapp.whatisstroke.Acknowledgement;
 import com.mapps.stroleapp.whatisstroke.WhatIsStrokeVideoActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button whatIsStroke, problemsAfterStroke, takingCareHome, feedback, followUpSchedule, signOut;
+    Button whatIsStroke, problemsAfterStroke, takingCareHome, feedback, followUpSchedule, signOut,acknowledgement;
 
     private FirebaseAuth auth;
 
@@ -40,11 +41,17 @@ public class HomeActivity extends AppCompatActivity {
         takingCareHome = findViewById(R.id.taking_care_home);
         feedback = findViewById(R.id.feedback);
         followUpSchedule = findViewById(R.id.follow_up_schedule);
-
+        acknowledgement=findViewById(R.id.acknowledgement);
         whatIsStroke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, WhatIsStrokeVideoActivity.class));
+            }
+        });
+        acknowledgement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, Acknowledgements.class));
             }
         });
 
