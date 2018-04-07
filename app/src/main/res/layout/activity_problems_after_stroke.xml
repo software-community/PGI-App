@@ -22,6 +22,17 @@
         android:padding="@dimen/activity_horizontal_margin">
 
         <Button
+            android:id="@+id/what_is_bedsore"
+            android:text="@string/what_bedsore"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            />
+
+        <Button
             android:id="@+id/problem_bedsore"
             android:text="@string/problem_bedsore"
             android:background="@drawable/roundbutton"

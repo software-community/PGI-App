@@ -23,7 +23,8 @@
         android:padding="@dimen/activity_horizontal_margin">
 
 
-    <Button
+
+        <Button
             android:background="@drawable/roundbutton"
             android:textColor="@color/colorAccent"
             android:id="@+id/what_is_stroke"

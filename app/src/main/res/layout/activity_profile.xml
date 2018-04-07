@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapps.stroleapp.ProfileActivity"
+    android:orientation="vertical"
+    android:weightSum="16"
+    android:background="@color/color_dark"
+    >
+
+
+    <TextView
+        android:paddingTop="15dip"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:textSize="20dip"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Profile of the stroke patient"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="31dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingTop="5dip"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:text="Name of the Patient"/>
+
+    </LinearLayout>
+    <RadioGroup android:id="@+id/rBGPoly"
+        android:layout_width="match_parent"
+        android:weightSum="4"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:layout_height="match_parent"
+
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            android:text="Mr"
+
+            />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Ms"
+            android:gravity="center"
+
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            />
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Mrs"
+            android:gravity="center"
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+
+            />
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Dr"
+            android:gravity="center"
+
+            android:background="@drawable/roundbutton"
+            android:textColor="@color/colorAccent"
+            />
+    </RadioGroup>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:textSize="20dip"
+    android:hint="Enter name here"
+    android:gravity="center"
+    android:textColorHint="@color/colorAccent"
+    android:background="@drawable/roundbutton"
+    android:textColor="@color/colorAccent"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingTop="5dip"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="20dip"
+            android:text="Sex"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+        <RadioGroup android:id="@+id/sex"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiosexbutton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Male"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+
+            />
+        <RadioButton
+            android:id="@+id/radiosexbutton2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Female"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+
+
+            />
+         </RadioGroup>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:weightSum="2">
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Contact number"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/roundbutton"
+        />
+    <EditText
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/roundbutton"
+
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Date of Stroke"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Address"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Occupation"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Education"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Health Insurance"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+        <RadioGroup android:id="@+id/health_insurance"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/insurance_yes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Yes"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/roundbutton"
+
+                />
+            <RadioButton
+                android:id="@+id/insurance_no"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="No"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/roundbutton"
+
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:weightSum="8">
+        <Button
+            android:layout_marginLeft="50dip"
+            android:layout_width="0dip"
+            android:text="Back"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+
+        <Button
+            android:layout_marginLeft="10dip"
+            android:text="Submit"
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+
+        <Button
+            android:layout_marginLeft="10dip"
+            android:layout_width="0dip"
+            android:layout_weight="3"
+            android:text="Reset"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+    </LinearLayout>
+</LinearLayout>

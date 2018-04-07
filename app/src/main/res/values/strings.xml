@@ -509,32 +509,35 @@ And\n
 My Wife\n
 (Smt. Vimla)"\n
     </string>
-    
+
     <string name="bedsore_img_1">चित्र 1: निचली पीठ, नितम्ब पर बैडसोर की अवस्थाएं</string>
     <string name="bedsore_img_2">चित्र 2: अलग-2 पोजीशन या करवट में बैडसोर बनने वाली जगहें</string>
 
     <string name="hinditext1">
-        <b>बैडसोर या बिस्तरी घाव क्या है ?</b>\n\n
-        अध्रंग केे मरीज की त्वचा पर, लम्बे समय तक बिस्तर पर पड़े रहने के कारण, घाव बन जाते हैं जिन्हे हम बैडसोर या बिस्तरी घाव कहते हैं ।
-        बैडसोर या बिस्तरी घाव मरीज़ की हड्डियों वाले हिस्से और पलंग या बिस्तर के बीच त्वचा और त्वचा के नीचे के उत्तकों पर लम्बे समय तक दबाव पड़ने के कारण बनते हैं ।\n\n\n
+        <b>What is bedsore?</b>\n\n
+        A stroke patient who is in bedridden state can develop wounds on the skin which is
+        called a bedsore. Bedsores can develop when skin and underlying parts of the
+        patients’ body are compressed between bony prominence (bones on which our body
+        is supported) and bed or chair for a prolonged period of time.
 
-        <b>बैडसोर के बढ़नेे की 4 अवस्थाएं होेती हैं:</b>\n\n
-        <b>पहली अवस्था:</b> इसमें त्वचा फटती नहीं है। लेकिन त्वचा में दर्द, लाली या त्वचा गर्म हो सकती है।\n
-        <b>दूसरी अवस्था:</b> इस अवस्था में त्वचा फट जाती है और घाव बन जाता है । इसमें दर्द भी हो सकता है । एक छाला या गड्ढा सा भी बन जाता है ।\n
-        <b>तीसरी अवस्था:</b> इस अवस्था में स्थिति और भी गंभीर हो जाती है । त्वचा की गहराई में घाव बन जाता है । इसमें दर्द भी हो सकता है ।\n
-        <b>चैथी अवस्था:</b> इस अवस्था में घाव बहुत गहरा हो जाता है । घाव मांस पेशियां, हड्डियों एवं जोड़ में भी फैल जाता है ।\n
+        <b>बThere are four stages of development of a bedsore:</b>\n\n
+        <b>First Stage:</b> There is no break or tears in the skin. The skin often is reddened and warmer. \n
+        <b>Second Stage:</b> There is a breakage in the skin. It may be painful. It can look like a scrape or abrasion, blister in the skin.\n
+        <b>Third Stage:</b>  The sore gets worse and extends into the tissue beneath the skin. It may be painful.\n
+        <b>Fourth Stage:</b> the pressure sore is very deep, causing extensive damage to deeper tissues, muscles, tendons, bones and joints.\n
     </string>
     <string name="hinditext2">
-        <b>चित्र 1: निचली पीठ, नितम्ब पर बैडसोर की अवस्थाएं</b>\n\n
+        <b>चिFigure 1: Different stages of bedsore at buttock region</b>\n\n
     </string>
     <string name="hinditext3">
-        <b>अलग-2 पोजीशन या करवट में बैडसोर बनने वाली जगहें:</b>\n\n
-        शरीर के कुछ निश्चित भाग या जगह पर बैडसोर जल्दी से बन जाते हैं ये जगहें हैं:\n\n
-        <b>सीधा लेटने या बैठने पर:</b> सिर के पीछे, कंधे, कोहनी, निचली पीठ, नितम्ब, कूल्हा, एवं ऐड़ी ।\n\n
-        <b>एक तरफ या साईड में लेटने पर:</b> कान, कंधे, कोहनी, नितम्ब, कूल्हा, जांघ, घुटना, टांग, टखना, एवं ऐड़ी ।\n\n
+        <b>Areas of bedsores in different position:</b>\n\n
+        There are certain specific areas of the body which are more prone to develop bedsores. These areas are:\n\n
+        <b>In flat or sitting position:</b> Back of the head, shoulder, elbow, lower back, buttock, and heel.
+\n\n
+        <b>In side lying position: </b> Ear, shoulder, elbow, hip, thigh, knee, leg, ankle, and heel.\n\n
     </string>
     <string name="hinditext4">
-        <b>चित्र 2: अलग-2 पोजीशन या करवट में बैडसोर बनने वाली जगहें</b>\n\n
+        <b>Figure 2: Areas of bedsores in different position</b>\n\n
     </string>
     <string name="what_bedsore">what is bedsore</string>
     <string name="acknowledgemen">Acknowledgements</string>

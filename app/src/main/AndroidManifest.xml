@@ -13,8 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".whatisstroke.MainActivity">
-        </activity>
+        <activity android:name=".whatisstroke.MainActivity"></activity>
         <activity
             android:name=".registration.SplashScreen"
             android:label="@string/app_name"
@@ -30,12 +29,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".HomeActivity"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:screenOrientation="portrait">
 
         </activity>
         <activity
@@ -88,7 +82,12 @@
         <activity android:name=".careathome.DosAndDontsActivity" />
         <activity android:name=".registration.ResetPasswordActivity" />
         <activity android:name=".registration.LoginActivity">
-              </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".whatisstroke.WhatIsStrokeVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
@@ -143,18 +142,15 @@
             android:name=".careathome.PsychologicalSupportVideoActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".careathome.MedicationAdvice" />
-        <activity android:name=".whatisstroke.Acknowledgement" >
-        </activity>
+        <activity android:name=".whatisstroke.Acknowledgement"></activity>
         <activity android:name=".activity_launcher" />
         <activity android:name=".whatisstroke.PhoneAuthActivity" />
         <activity
             android:name=".Acknowledgements"
-            android:label="@string/title_activity_acknowledgements">
-
-        </activity>
-        <activity android:name=".WhatIsBedsoreHindi">
-
-        </activity>
+            android:label="@string/title_activity_acknowledgements"></activity>
+        <activity android:name=".WhatIsBedsoreHindi"></activity>
+        <activity android:name=".ProfileActivity">
+            </activity>
     </application>
 
 </manifest>

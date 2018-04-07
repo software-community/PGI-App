@@ -6,16 +6,6 @@
     android:orientation="vertical"
     tools:context="com.mapps.stroleapp.careathome.BedsoreWhatAndPreventionHomeActivity"
     android:background="@color/color_dark">
-    <Button
-        android:id="@+id/what_is_bedsore"
-        android:text="@string/what_bedsore"
-        android:background="@drawable/roundbutton"
-        android:textColor="@color/colorAccent"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dip"
-        />
 
 
     <Button

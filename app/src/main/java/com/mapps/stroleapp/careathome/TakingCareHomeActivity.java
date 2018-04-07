@@ -19,7 +19,6 @@ public class TakingCareHomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taking_care_home);
 
-        whatAndPrevention = findViewById(R.id.what_and_prevention);
         howToFeed = findViewById(R.id.how_to_feed);
         mouthCare = findViewById(R.id.mouth_care);
         urinaryCatheterCare = findViewById(R.id.urinary_catheter_care);
@@ -28,12 +27,6 @@ public class TakingCareHomeActivity extends AppCompatActivity {
         dosAndDonts = findViewById(R.id.dos_and_donts);
         takingCareBack = findViewById(R.id.taking_care_back);
 
-        whatAndPrevention.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(TakingCareHomeActivity.this, BedsoreWhatAndPreventionHomeActivity.class));
-            }
-        });
         howToFeed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

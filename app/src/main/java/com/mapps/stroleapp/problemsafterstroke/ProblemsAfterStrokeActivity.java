@@ -8,17 +8,19 @@ import android.widget.Button;
 
 import com.mapps.stroleapp.HomeActivity;
 import com.mapps.stroleapp.R;
+import com.mapps.stroleapp.careathome.BedsoreWhatAndPreventionHomeActivity;
+import com.mapps.stroleapp.careathome.TakingCareHomeActivity;
 
 public class ProblemsAfterStrokeActivity extends AppCompatActivity {
 
     private Button problemBedsore, problemFeedingTube, problemUrinaryCatheter, problemBadMouthOdor,
-            problemShoulderPain, problemLinkWeekness, problemLimbSpasticity, problemFever, problemOther, problemBack;
+            problemShoulderPain, whatAndPrevention,problemLinkWeekness, problemLimbSpasticity, problemFever, problemOther, problemBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problems_after_stroke);
-
+        whatAndPrevention = findViewById(R.id.what_and_prevention);
         problemBedsore = findViewById(R.id.problem_bedsore);
         problemFeedingTube = findViewById(R.id.problem_feeding_tube);
         problemUrinaryCatheter = findViewById(R.id.problem_urinary_catheter);
@@ -29,6 +31,13 @@ public class ProblemsAfterStrokeActivity extends AppCompatActivity {
         problemFever = findViewById(R.id.problem_fever);
         problemOther = findViewById(R.id.problem_other);
         problemBack = findViewById(R.id.problem_back);
+
+        whatAndPrevention.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProblemsAfterStrokeActivity.this, BedsoreWhatAndPreventionHomeActivity.class));
+            }
+        });
 
         problemBedsore.setOnClickListener(new View.OnClickListener() {
             @Override
