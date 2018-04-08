@@ -541,5 +541,27 @@ My Wife\n
     </string>
     <string name="what_bedsore">what is bedsore</string>
     <string name="acknowledgemen">Acknowledgements</string>
+    <string name="profile_header">Profile</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_name_hint">Enter name here</string>
+    <string name="profile_sex">Sex</string>
+    <string name="profile_male">Male</string>
+    <string name="profile_female">Female</string>
+    <string name="profile_contact">Contact number</string>
+    <string name="profile_age">Age:</string>
+    <string name="profile_date">Date of Stroke</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_occupation">Occupation</string>
+    <string name="profile_education">Education</string>
+    <string name="profile_health_insurance">Health Insurance</string>
+    <string name="profile_yes">Yes</string>
+    <string name="profile_no">No</string>
+    <string name="profile_back">Back</string>
+    <string name="profile_submit">Submit</string>
+    <string name="profile_reset">Reset</string>
+    <string name="profile_mr">Mr</string>
+    <string name="profile_ms">Ms</string>
+    <string name="profile_mrs">Mrs</string>
+    <string name="profile_dr">Dr</string>
 
 </resources>

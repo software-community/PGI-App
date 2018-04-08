@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.mapps.stroleapp.ProfileActivity"
     android:orientation="vertical"
-    android:weightSum="16"
+    android:weightSum="15"
     android:background="@color/color_dark"
+    android:divider="@drawable/divider"
     >
 
 
@@ -17,11 +18,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="2"
-        android:textSize="20dip"
+        android:textSize="30dip"
         android:background="@drawable/roundbutton"
         android:textColor="@color/white"
         android:gravity="center"
-        android:text="Profile of the stroke patient"
+        android:text="@string/profile_header"
         tools:layout_editor_absoluteX="24dp"
         tools:layout_editor_absoluteY="31dp" />
     <LinearLayout
@@ -31,6 +32,7 @@
         android:paddingTop="5dip"
         android:weightSum="8"
         android:orientation="horizontal"
+        android:layout_marginTop="5dip"
         >
         <TextView
             android:layout_width="0dip"
@@ -40,58 +42,60 @@
             android:textColor="@color/colorAccent"
             android:gravity="center"
             android:textSize="20dip"
-            android:text="Name of the Patient"/>
+            android:text="@string/profile_name"/>
 
     </LinearLayout>
-    <RadioGroup android:id="@+id/rBGPoly"
+    <RadioGroup android:id="@+id/profile_title"
         android:layout_width="match_parent"
         android:weightSum="4"
         android:layout_height="0dip"
         android:layout_weight="1"
         android:orientation="horizontal"
+        android:layout_marginTop="5dip"
         >
 
         <RadioButton
-            android:id="@+id/radioButton1"
+            android:id="@+id/profile_mr"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
-
+            android:onClick="onRadioButtonTitleClicked"
             android:layout_height="match_parent"
 
             android:background="@drawable/roundbutton"
             android:textColor="@color/colorAccent"
-            android:text="Mr"
+            android:text="@string/profile_mr"
 
             />
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/profile_ms"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Ms"
+            android:text="@string/profile_ms"
             android:gravity="center"
-
+            android:onClick="onRadioButtonTitleClicked"
             android:background="@drawable/roundbutton"
             android:textColor="@color/colorAccent"
             />
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/profile_mrs"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Mrs"
+            android:text="@string/profile_mrs"
             android:gravity="center"
+            android:onClick="onRadioButtonTitleClicked"
             android:background="@drawable/roundbutton"
             android:textColor="@color/colorAccent"
 
             />
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/profile_dr"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Dr"
+            android:text="@string/profile_dr"
             android:gravity="center"
 
             android:background="@drawable/roundbutton"
@@ -103,11 +107,13 @@
     android:layout_height="0dip"
     android:layout_weight="1"
     android:textSize="20dip"
-    android:hint="Enter name here"
+    android:hint="@string/profile_name_hint"
+    android:id="@+id/profile_name"
     android:gravity="center"
-    android:textColorHint="@color/colorAccent"
+    android:textColorHint="@color/white"
     android:background="@drawable/roundbutton"
     android:textColor="@color/colorAccent"
+    android:layout_marginTop="5dip"
     />
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,13 +122,15 @@
         android:paddingTop="5dip"
         android:weightSum="5"
         android:orientation="horizontal"
+        android:layout_marginTop="5dip"
         >
         <TextView
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:textSize="20dip"
-            android:text="Sex"
+            android:text="@string/profile_sex"
+
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
@@ -134,25 +142,27 @@
             android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radiosexbutton1"
+            android:id="@+id/radiosexbuttonmale"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Male"
+            android:text="@string/profile_male"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
+            android:onClick="onRadioButtonSexClicked"
 
             />
         <RadioButton
-            android:id="@+id/radiosexbutton2"
+            android:id="@+id/radiosexbuttonfemale"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Female"
+            android:text="@string/profile_female"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
+            android:onClick="onRadioButtonSexClicked"
 
 
             />
@@ -162,12 +172,13 @@
     android:layout_width="match_parent"
     android:layout_height="0dip"
     android:layout_weight="1"
-    android:weightSum="2">
+    android:weightSum="2"
+    android:layout_marginTop="5dip">
     <TextView
         android:layout_width="0dip"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="Contact number"
+        android:text="@string/profile_contact"
         android:gravity="center"
         android:textColor="@color/colorAccent"
         android:background="@drawable/roundbutton"
@@ -178,6 +189,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:textColor="@color/colorAccent"
+        android:id="@+id/profile_contact"
         android:background="@drawable/roundbutton"
 
         />
@@ -187,12 +199,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:layout_marginTop="5dip">
         <TextView
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Date of Stroke"
+            android:text="@string/profile_age"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
@@ -204,20 +217,21 @@
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
+            android:id="@+id/profile_age"
 
             />
-
     </LinearLayout>
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:layout_marginTop="5dip">
         <TextView
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Address"
+            android:text="@string/profile_date"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
@@ -229,6 +243,7 @@
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
+            android:id="@+id/profile_date"
 
             />
 
@@ -237,12 +252,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:layout_marginTop="5dip">
         <TextView
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Occupation"
+            android:text="@string/profile_address"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
@@ -254,7 +270,7 @@
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
-
+            android:id="@+id/profile_address"
             />
 
     </LinearLayout>
@@ -262,12 +278,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:layout_marginTop="5dip">
         <TextView
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Education"
+            android:text="@string/profile_occupation"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
@@ -279,7 +296,7 @@
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
-
+            android:id="@+id/profile_occupation"
             />
 
     </LinearLayout>
@@ -287,12 +304,40 @@
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:weightSum="4">
+        android:weightSum="2"
+        android:layout_marginTop="5dip">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/profile_education"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            />
+        <EditText
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/roundbutton"
+            android:id="@+id/profile_education"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:layout_marginTop="5dip">
         <TextView
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Health Insurance"
+            android:text="@string/profile_health_insurance"
+            android:id="@+id/profile_textview_insurance"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
@@ -304,25 +349,26 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/insurance_yes"
+                android:id="@+id/profile_insurance_yes"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="Yes"
+                android:text="@string/profile_yes"
                 android:gravity="center"
                 android:textColor="@color/colorAccent"
                 android:background="@drawable/roundbutton"
-
+                android:onClick="onRadioButtonHealthClicked"
                 />
             <RadioButton
-                android:id="@+id/insurance_no"
+                android:id="@+id/profile_insurance_no"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:text="No"
+                android:text="@string/profile_no"
                 android:gravity="center"
                 android:textColor="@color/colorAccent"
                 android:background="@drawable/roundbutton"
+                android:onClick="onRadioButtonHealthClicked"
 
                 />
         </RadioGroup>
@@ -331,39 +377,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
-        android:layout_weight="2"
-        android:weightSum="8">
+        android:layout_weight="1.5"
+        android:weightSum="8"
+        android:layout_marginTop="5dip">
         <Button
             android:layout_marginLeft="50dip"
             android:layout_width="0dip"
-            android:text="Back"
+            android:text="@string/profile_back"
             android:layout_weight="2"
             android:layout_height="match_parent"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
+            android:id="@+id/profile_back"
             />
 
         <Button
             android:layout_marginLeft="10dip"
-            android:text="Submit"
+            android:text="@string/profile_submit"
             android:layout_width="0dip"
             android:layout_weight="2"
             android:layout_height="match_parent"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
+            android:id="@+id/profile_submit"
             />
 
         <Button
             android:layout_marginLeft="10dip"
             android:layout_width="0dip"
-            android:layout_weight="3"
-            android:text="Reset"
+            android:layout_weight="2"
+            android:text="@string/profile_reset"
             android:layout_height="match_parent"
             android:gravity="center"
             android:textColor="@color/colorAccent"
             android:background="@drawable/roundbutton"
+            android:id="@+id/profile_reset"
+
             />
     </LinearLayout>
 </LinearLayout>

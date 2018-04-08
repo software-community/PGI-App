@@ -190,6 +190,28 @@
     <string name="hinditext4">
         <b>चित्र 2: अलग-2 पोजीशन या करवट में बैडसोर बनने वाली जगहें</b>\n\n
     </string>
+    <string name="profile_header">प्रोफाइल</string>
+    <string name="profile_name">नाम2</string>
+    <string name="profile_name_hint">नाम</string>
+    <string name="profile_sex">लिंग</string>
+    <string name="profile_male">पुरुष</string>
+    <string name="profile_female">महिला</string>
+    <string name="profile_contact">मोबाइल नंबर</string>
+    <string name="profile_age">आयु:</string>
+    <string name="profile_date">अधरंग होने की तारीख</string>
+    <string name="profile_address">पत्ता</string>
+    <string name="profile_occupation">व्यवसाय</string>
+    <string name="profile_education">शिक्षा का स्तर</string>
+    <string name="profile_health_insurance">स्वास्थ्य बीमा</string>
+    <string name="profile_yes">हाँ</string>
+    <string name="profile_no">नहीं</string>
+    <string name="profile_back">पीछे जाएँ</string>
+    <string name="profile_submit">जमा करें</string>
+    <string name="profile_reset">ठीक करें</string>
+    <string name="profile_mr">श्रीमान</string>
+    <string name="profile_ms">श्रीमती</string>
+    <string name="profile_mrs">सुश्री</string>
+    <string name="profile_dr">डॉ</string>
 
 
 </resources>

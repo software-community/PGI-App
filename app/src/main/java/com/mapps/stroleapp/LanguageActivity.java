@@ -39,7 +39,7 @@ public class LanguageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setLanguage("hi");
-                startActivity(new Intent(LanguageActivity.this, HomeActivity.class));
+                startActivity(new Intent(LanguageActivity.this, ProfileActivity.class));
             }
         });
 
@@ -47,7 +47,7 @@ public class LanguageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setLanguage("en");
-                startActivity(new Intent(LanguageActivity.this, HomeActivity.class));
+                startActivity(new Intent(LanguageActivity.this, ProfileActivity.class));
             }
         });
 
