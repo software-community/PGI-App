@@ -563,5 +563,7 @@ My Wife\n
     <string name="profile_ms">Ms</string>
     <string name="profile_mrs">Mrs</string>
     <string name="profile_dr">Dr</string>
+    <string name="relation">Relation with patient</string>
+    <string name="profile_training">Previous training regarding care giving</string>
 
 </resources>

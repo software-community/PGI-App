@@ -10,8 +10,6 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
-import com.mapps.stroleapp.whatisstroke.Acknowledgement;
-
 import java.util.Locale;
 
 public class LanguageActivity extends AppCompatActivity {
@@ -39,7 +37,7 @@ public class LanguageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setLanguage("hi");
-                startActivity(new Intent(LanguageActivity.this, ProfileActivity.class));
+                startActivity(new Intent(LanguageActivity.this, RoleActivity.class));
             }
         });
 
@@ -47,14 +45,14 @@ public class LanguageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setLanguage("en");
-                startActivity(new Intent(LanguageActivity.this, ProfileActivity.class));
+                startActivity(new Intent(LanguageActivity.this, RoleActivity.class));
             }
         });
 
         acknowledgement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LanguageActivity.this, Acknowledgement.class));
+                startActivity(new Intent(LanguageActivity.this, Acknowledgements.class));
             }
         });
 

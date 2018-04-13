@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.mapps.stroleapp.HomeActivity;
 import com.mapps.stroleapp.R;
+import com.mapps.stroleapp.WhatIsBedsoreHindi;
 
 public class TakingCareHomeActivity extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class TakingCareHomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taking_care_home);
-
+        whatAndPrevention=findViewById(R.id.what_and_prevention);
         howToFeed = findViewById(R.id.how_to_feed);
         mouthCare = findViewById(R.id.mouth_care);
         urinaryCatheterCare = findViewById(R.id.urinary_catheter_care);
@@ -26,6 +27,12 @@ public class TakingCareHomeActivity extends AppCompatActivity {
         psychologicalSupport = findViewById(R.id.psychological_support);
         dosAndDonts = findViewById(R.id.dos_and_donts);
         takingCareBack = findViewById(R.id.taking_care_back);
+        whatAndPrevention.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TakingCareHomeActivity.this, WhatIsBedsoreHindi.class));
+            }
+        });
 
         howToFeed.setOnClickListener(new View.OnClickListener() {
             @Override

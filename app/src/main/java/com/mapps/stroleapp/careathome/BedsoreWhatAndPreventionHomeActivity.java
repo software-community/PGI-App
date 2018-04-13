@@ -11,7 +11,7 @@ import com.mapps.stroleapp.WhatIsBedsoreHindi;
 
 public class BedsoreWhatAndPreventionHomeActivity extends AppCompatActivity {
 
-    private Button whatAndPrevention, backCare, degreeObliquePosition, bedsoreDressing,
+    private Button backCare, degreeObliquePosition, bedsoreDressing,
             sterileArticlesBedsoreDressing, back,bedsore;
 
     @Override
@@ -19,7 +19,6 @@ public class BedsoreWhatAndPreventionHomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bedsore_what_and_prevention);
 
-        whatAndPrevention = findViewById(R.id.what_and_prevention);
         backCare = findViewById(R.id.back_care);
         degreeObliquePosition = findViewById(R.id.degree_oblique_position);
         bedsoreDressing = findViewById(R.id.bedsore_dressing);
@@ -28,12 +27,6 @@ public class BedsoreWhatAndPreventionHomeActivity extends AppCompatActivity {
         bedsore= findViewById(R.id.what_is_bedsore);
 
 
-        whatAndPrevention.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(BedsoreWhatAndPreventionHomeActivity.this, WhatAndPreventionVideoActivity.class));
-            }
-        });
 
         backCare.setOnClickListener(new View.OnClickListener() {
             @Override

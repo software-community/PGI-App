@@ -32,4 +32,6 @@ dependencies {
     compile 'com.google.firebase:firebase-core:12.0.1'  //  firebase
     compile 'com.google.firebase:firebase-auth:12.0.1'
 }
+
+
 apply plugin: 'com.google.gms.google-services'

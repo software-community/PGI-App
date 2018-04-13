@@ -1,7 +1,9 @@
 package com.mapps.stroleapp.registration;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -123,6 +125,10 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Successfully logged in", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this, LanguageActivity.class);
             startActivity(intent);
+            SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putInt("done", 0);
+            editor.commit();
         }
         else
         {

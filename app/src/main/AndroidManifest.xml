@@ -21,11 +21,6 @@
         <activity
             android:name=".LanguageActivity"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity
@@ -89,7 +84,13 @@
         <activity android:name=".careathome.DosAndDontsActivity" />
         <activity android:name=".registration.ResetPasswordActivity" />
         <activity android:name=".registration.LoginActivity">
-            </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".whatisstroke.WhatIsStrokeVideoActivity"
             android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
@@ -144,7 +145,6 @@
             android:name=".careathome.PsychologicalSupportVideoActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".careathome.MedicationAdvice" />
-        <activity android:name=".whatisstroke.Acknowledgement"></activity>
         <activity android:name=".activity_launcher" />
         <activity android:name=".whatisstroke.PhoneAuthActivity" />
         <activity

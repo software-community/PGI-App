@@ -8,37 +8,36 @@ import android.widget.Button;
 
 import com.mapps.stroleapp.HomeActivity;
 import com.mapps.stroleapp.R;
+import com.mapps.stroleapp.WhatIsBedsoreHindi;
 import com.mapps.stroleapp.careathome.BedsoreWhatAndPreventionHomeActivity;
 import com.mapps.stroleapp.careathome.TakingCareHomeActivity;
 
 public class ProblemsAfterStrokeActivity extends AppCompatActivity {
 
     private Button problemBedsore, problemFeedingTube, problemUrinaryCatheter, problemBadMouthOdor,
-            problemShoulderPain, whatAndPrevention,problemLinkWeekness, problemLimbSpasticity, problemFever, problemOther, problemBack;
+            problemShoulderPain, problemLinkWeekness, problemLimbSpasticity, problemFever, problemOther, problemBack,what_is_bedsore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problems_after_stroke);
-        whatAndPrevention = findViewById(R.id.what_and_prevention);
         problemBedsore = findViewById(R.id.problem_bedsore);
         problemFeedingTube = findViewById(R.id.problem_feeding_tube);
         problemUrinaryCatheter = findViewById(R.id.problem_urinary_catheter);
         problemBadMouthOdor = findViewById(R.id.problem_bad_mouth_odor);
         problemShoulderPain = findViewById(R.id.problem_shoulder_pain);
         problemLinkWeekness = findViewById(R.id.problem_link_weekness);
-
+        what_is_bedsore =findViewById(R.id.what_is_bedsore);
         problemFever = findViewById(R.id.problem_fever);
         problemOther = findViewById(R.id.problem_other);
         problemBack = findViewById(R.id.problem_back);
 
-        whatAndPrevention.setOnClickListener(new View.OnClickListener() {
+        what_is_bedsore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProblemsAfterStrokeActivity.this, BedsoreWhatAndPreventionHomeActivity.class));
+                startActivity(new Intent(ProblemsAfterStrokeActivity.this, WhatIsBedsoreHindi.class));
             }
         });
-
         problemBedsore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

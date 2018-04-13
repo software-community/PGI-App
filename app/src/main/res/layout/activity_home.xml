@@ -94,16 +94,6 @@
             android:layout_marginTop="20dip"
             />
 
-        <Button
-            android:id="@+id/acknowledgement"
-            android:text="@string/acknowledgemen"
-            android:background="@drawable/roundbutton"
-            android:textColor="@color/colorAccent"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dip"
-            />
 
 
     </LinearLayout>
