@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_home);
 
-        signOut = (Button) findViewById(R.id.sign_out);
+       // signOut = (Button) findViewById(R.id.sign_out);
 
 
         whatIsStroke = findViewById(R.id.what_is_stroke);
@@ -72,18 +72,18 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        signOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signOut();
-                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
-            }
-        });
+//        signOut.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                signOut();
+//                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+//            }
+//        });
 
     }
 
-    public void signOut() {
-        auth.signOut();
-    }
+//    public void signOut() {
+//        auth.signOut();
+//    }
 
 }

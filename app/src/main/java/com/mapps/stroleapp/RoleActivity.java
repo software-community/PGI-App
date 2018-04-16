@@ -40,6 +40,7 @@ public class RoleActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putString("role", "patient");
                 editor.commit();
+
                 startActivity(new Intent(RoleActivity.this, ProfileActivity.class));
             }
         });
