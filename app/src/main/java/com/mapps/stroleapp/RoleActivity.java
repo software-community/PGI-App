@@ -16,6 +16,7 @@ public class RoleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        startActivity(new Intent(RoleActivity.this, ProfileActivity.class));
         setContentView(R.layout.activity_role);
 
         roleCaregiver = findViewById(R.id.role_care_giver);

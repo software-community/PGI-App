@@ -36,6 +36,7 @@
     <string name="urinary_catheter_duration_in_days">Duration of urinary (Foley\'s) catheter in days</string>
     <string name="urinary_catheter_last_changed">When it was last changed?</string>
     <string name="what_and_prevention">What is bedsore ? How to prevent bedsore?</string>
+    <string name="what_bedsore">what is bedsore</string>
     <string name="how_to_feed">How do I feed my patient?</string>
     <string name="mouth_care">How do I care of mouth of my patient?</string>
     <string name="urinary_catheter_care">How do I care urinary catheter of my patient?</string>

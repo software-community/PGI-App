@@ -30,7 +30,7 @@ public class TakingCareHomeActivity extends AppCompatActivity {
         whatAndPrevention.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TakingCareHomeActivity.this, WhatIsBedsoreHindi.class));
+                startActivity(new Intent(TakingCareHomeActivity.this, WhatAndPreventionVideoActivity.class));
             }
         });
 

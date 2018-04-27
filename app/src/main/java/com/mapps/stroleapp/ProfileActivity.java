@@ -32,11 +32,11 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+        final SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
         int ret = settings.getInt("done", 0);
         if(ret==1)
             startActivity(new Intent(ProfileActivity.this, HomeActivity.class));
-        role = settings.getString("role", "patient");
+        role = settings.getString("role","patient");
         if(role.equals("patient"))
             setContentView(R.layout.activity_profile);
         else
@@ -92,8 +92,21 @@ public class ProfileActivity extends AppCompatActivity {
                     Toast.makeText(getBaseContext(),"Fill all the entries",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    submitInfo();
-                    startActivity(new Intent(ProfileActivity.this, HomeActivity.class));
+                    if(role.equals("patient"))
+                    {
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putString("role", "care");
+                        editor.commit();
+                        submitInfo();
+                        Intent intent = getIntent();
+                        finish();
+                        startActivity(intent);
+                    }
+                    else{
+                        submitInfo();
+                        startActivity(new Intent(ProfileActivity.this, HomeActivity.class));
+                    }
+
                 }
             }
         });
@@ -192,10 +205,14 @@ public class ProfileActivity extends AppCompatActivity {
         else
             entry = new ProfileModelClass(gender1,contact1,date1,address1,occupation1,education1,name1,insurance1,relation,role,previous);
         databaseProfile.child(id).setValue(entry);
-        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putInt("done", 1);
-        editor.commit();
+        if(role.equals("care"))
+        {
+            SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putInt("done", 1);
+            editor.commit();
+        }
+
 
     }
 }
